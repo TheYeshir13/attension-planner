@@ -157,12 +157,19 @@ function printPlan() {
 }
 
 function toICSDateTime(show) {
-  // TODO: Passe das Datum an die echten Festivaltage an.
-  // Beispiel: 20260820-23 für Do-So
-  const dayMap = { 'Do': '20260820', 'Fr': '20260821', 'Sa': '20260822', 'So': '20260823' };
-  const dateStr = dayMap[show.day] || '20260820';
+  // Festival 03.09.2026 (Do) bis 06.09.2026 (So)
+  const dayMap = {
+    'Do': '20260903', // Donnerstag, 03.09.2026
+    'Fr': '20260904', // Freitag, 04.09.2026
+    'Sa': '20260905', // Samstag, 05.09.2026
+    'So': '20260906'  // Sonntag, 06.09.2026
+  };
+
+  const dateStr = dayMap[show.day] || '20260903'; // Fallback: erster Festivaltag
   const time = (show.time || '00:00').replace(':', '');
-  const timeHM = time + '00';
+  const timeHM = time + '00'; // HHMMSS
+
+  // Ergebnis im iCal‑Format YYYYMMDDTHHMMSS
   return `${dateStr}T${timeHM}`;
 }
 
