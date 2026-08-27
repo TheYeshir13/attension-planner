@@ -10,13 +10,20 @@ from urllib.request import Request, urlopen
 
 
 PROGRAM_URL = "https://attension-festival.de/programm"
-CATEGORY_PATH = Path(__file__).with_name("program_categories.json")
 VOUCHERSHOW = "Vouchershow"
 THEATER = "Theater/Tanz/Zirkus"
 SIDESHOWS = "Sideshows/Walkacts/Installationen"
 CHILDREN = "Kinderprogramm"
 KINO = "Kino/Workshops/Lesungen"
 MUSIC = "Musik"
+WEBSITE_CATEGORIES = {
+    "Vouchershows": VOUCHERSHOW,
+    "Theater / Tanz / Zirkus": THEATER,
+    "Sideshows / Walkacts / Installationen": SIDESHOWS,
+    "Kinderprogramm": CHILDREN,
+    "Musikprogramm": MUSIC,
+    "Kino / Workshops / Lesungen": KINO,
+}
 DAY_MAP = {"DO": "Do", "FR": "Fr", "SA": "Sa", "SO": "So"}
 DAY_ORDER = ["Do", "Fr", "Sa", "So"]
 TIME_RE = re.compile(r"\b(DO|FR|SA|SO)\s+(\d{1,2})[.:](\d{2})\b", re.IGNORECASE)
@@ -126,7 +133,12 @@ def parse_items(source, category_map=None):
     parser = TreeParser()
     parser.feed(source)
     items = []
+    current_category = None
     for node in descendants(parser.root):
+        if class_contains(node, "program-category"):
+            category_name = text(node)
+            current_category = WEBSITE_CATEGORIES.get(category_name)
+            continue
         if not class_contains(node, "program-item"):
             continue
         if has_program_item_descendant(node):
@@ -178,11 +190,9 @@ def parse_items(source, category_map=None):
         )
         item_type = text(type_node) if type_node else None
         min_age = label_value(node, "Mindestalter")
-        category = category_map.get(
+        category = current_category or category_map.get(
             anchor.attrs["id"], fallback_category(item_type, title, min_age)
         )
-        if item_type and item_type.casefold() == "kino" and min_age:
-            category = CHILDREN
         organizer_node = first_descendant(
             node,
             lambda item: item.tag == "span"
@@ -222,8 +232,7 @@ def fetch_source(url):
 def main():
     output = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("data.json")
     source = fetch_source(PROGRAM_URL)
-    category_map = json.loads(CATEGORY_PATH.read_text(encoding="utf-8"))
-    entries = parse_items(source, category_map)
+    entries = parse_items(source)
     if not entries:
         raise RuntimeError("No program appointments found; refusing to overwrite data.json.")
     output.write_text(json.dumps(entries, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

@@ -1,7 +1,7 @@
 [
   {
     "title": "Lange Leitung",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Hörspiele",
     "organizer": null,
     "duration": null,
@@ -16,7 +16,7 @@
   },
   {
     "title": "Spielewald",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Zocken im Wald",
     "organizer": null,
     "duration": null,
@@ -31,7 +31,7 @@
   },
   {
     "title": "Die Welt von Tante Moos",
-    "type": "Kinderprogramm",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "apokalyptischer Mikrokosmos",
     "organizer": null,
     "duration": null,
@@ -211,7 +211,7 @@
   },
   {
     "title": "Fahrrad Halunk:innen",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Bikergang mit Bildungsauftrag",
     "organizer": null,
     "duration": null,
@@ -466,7 +466,7 @@
   },
   {
     "title": "ALLEIN MACHEN SIE DICH EIN",
-    "type": "Musik",
+    "type": "Kino/Workshops/Lesungen",
     "genre": "Musikalische Erzählung",
     "organizer": null,
     "duration": "90 Min.",
@@ -496,7 +496,7 @@
   },
   {
     "title": "R.OSA - 10 exercises for new virtuosities",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Vouchershow",
     "genre": "Zeitgenössischer Tanz",
     "organizer": null,
     "duration": "45 Min.",
@@ -676,7 +676,7 @@
   },
   {
     "title": "Extrawurst & Allstars",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Theater / Performance",
     "organizer": null,
     "duration": "60 Min.",
@@ -766,7 +766,7 @@
   },
   {
     "title": "La Soirée",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Vouchershow",
     "genre": "Zeitgenössischer Zirkus",
     "organizer": null,
     "duration": "60 Min.",
@@ -781,7 +781,7 @@
   },
   {
     "title": "MDR – Death from Laughter",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Vouchershow",
     "genre": "Zeitgenössischer Zirkus / Clown",
     "organizer": null,
     "duration": "70 Min.",
@@ -856,7 +856,7 @@
   },
   {
     "title": "Ein Resistänzchen (Das Samenbomben-Manifest)",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Spoken Word Performace",
     "organizer": null,
     "duration": "20 Min.",
@@ -916,7 +916,7 @@
   },
   {
     "title": "Opéra pour sèche cheveux",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Vouchershow",
     "genre": "Zeitgenössischer Zirkus",
     "organizer": null,
     "duration": "60 Min.",
@@ -1096,7 +1096,7 @@
   },
   {
     "title": "Rêve encore plus",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Vouchershow",
     "genre": "Zeitgenössischer Zirkus",
     "organizer": null,
     "duration": "50 Min.",
@@ -1306,7 +1306,7 @@
   },
   {
     "title": "Quanta Qualia",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Performance",
     "organizer": null,
     "duration": null,
@@ -1471,7 +1471,7 @@
   },
   {
     "title": "Fahrrad Halunk:innen",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Bikergang mit Bildungsauftrag",
     "organizer": null,
     "duration": null,
@@ -1501,7 +1501,7 @@
   },
   {
     "title": "Lange Leitung",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Hörspiele",
     "organizer": null,
     "duration": null,
@@ -1516,7 +1516,7 @@
   },
   {
     "title": "Opéra pour sèche cheveux",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Vouchershow",
     "genre": "Zeitgenössischer Zirkus",
     "organizer": null,
     "duration": "60 Min.",
@@ -1546,7 +1546,7 @@
   },
   {
     "title": "Spielewald",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Zocken im Wald",
     "organizer": null,
     "duration": null,
@@ -2071,7 +2071,7 @@
   },
   {
     "title": "Hey Püppi",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Theater",
     "organizer": null,
     "duration": null,
@@ -2371,7 +2371,7 @@
   },
   {
     "title": "Stark aufwachsen – Geschlechtersensibel, solidarisch und selbstbewusst",
-    "type": "Kino/Workshops/Lesungen",
+    "type": "Kinderprogramm",
     "genre": "Workshop",
     "organizer": null,
     "duration": "90 Min.",
@@ -2416,7 +2416,7 @@
   },
   {
     "title": "Ein Resistänzchen (Das Samenbomben-Manifest)",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Spoken Word Performace",
     "organizer": null,
     "duration": "20 Min.",
@@ -2431,7 +2431,7 @@
   },
   {
     "title": "Opéra pour sèche cheveux",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Vouchershow",
     "genre": "Zeitgenössischer Zirkus",
     "organizer": null,
     "duration": "60 Min.",
@@ -2491,7 +2491,7 @@
   },
   {
     "title": "Rêve encore plus",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Vouchershow",
     "genre": "Zeitgenössischer Zirkus",
     "organizer": null,
     "duration": "50 Min.",
@@ -2536,7 +2536,7 @@
   },
   {
     "title": "Ein Resistänzchen (Das Samenbomben-Manifest)",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Spoken Word Performace",
     "organizer": null,
     "duration": "20 Min.",
@@ -2821,7 +2821,7 @@
   },
   {
     "title": "Wurstical",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Theater / Performance",
     "organizer": null,
     "duration": "40 Min.",
@@ -3091,7 +3091,7 @@
   },
   {
     "title": "La Soirée",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Vouchershow",
     "genre": "Zeitgenössischer Zirkus",
     "organizer": null,
     "duration": "60 Min.",
@@ -3106,7 +3106,7 @@
   },
   {
     "title": "MDR – Death from Laughter",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Vouchershow",
     "genre": "Zeitgenössischer Zirkus / Clown",
     "organizer": null,
     "duration": "70 Min.",
@@ -3136,7 +3136,7 @@
   },
   {
     "title": "Dragons, Dungeons & Drag. The Tavern Tales",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Performance",
     "organizer": null,
     "duration": "120 Min.",
@@ -3571,7 +3571,7 @@
   },
   {
     "title": "Bürokrammist",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Tanz / Performance",
     "organizer": null,
     "duration": "20 Min.",
@@ -3601,7 +3601,7 @@
   },
   {
     "title": "Call me, wenn die Erde brennt",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Theater / Performance",
     "organizer": null,
     "duration": "40 Min.",
@@ -3691,7 +3691,7 @@
   },
   {
     "title": "R.OSA - 10 exercises for new virtuosities",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Vouchershow",
     "genre": "Zeitgenössischer Tanz",
     "organizer": null,
     "duration": "45 Min.",
@@ -4126,7 +4126,7 @@
   },
   {
     "title": "Fahrrad Halunk:innen",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Bikergang mit Bildungsauftrag",
     "organizer": null,
     "duration": null,
@@ -4171,7 +4171,7 @@
   },
   {
     "title": "Lange Leitung",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Hörspiele",
     "organizer": null,
     "duration": null,
@@ -4201,7 +4201,7 @@
   },
   {
     "title": "R.OSA - 10 exercises for new virtuosities",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Vouchershow",
     "genre": "Zeitgenössischer Tanz",
     "organizer": null,
     "duration": "45 Min.",
@@ -4216,7 +4216,7 @@
   },
   {
     "title": "Spielewald",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Zocken im Wald",
     "organizer": null,
     "duration": null,
@@ -4276,7 +4276,7 @@
   },
   {
     "title": "Ein Resistänzchen (Das Samenbomben-Manifest)",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Spoken Word Performace",
     "organizer": null,
     "duration": "20 Min.",
@@ -4396,7 +4396,7 @@
   },
   {
     "title": "Zirkusworkshop (Kinder)",
-    "type": "Kinderprogramm",
+    "type": "Kino/Workshops/Lesungen",
     "genre": "Workshop",
     "organizer": null,
     "duration": null,
@@ -4531,7 +4531,7 @@
   },
   {
     "title": "Ein Resistänzchen (Das Samenbomben-Manifest)",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Spoken Word Performace",
     "organizer": null,
     "duration": "20 Min.",
@@ -4846,7 +4846,7 @@
   },
   {
     "title": "Villa Vulva",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Figurentheater",
     "organizer": null,
     "duration": "40 Min.",
@@ -4936,7 +4936,7 @@
   },
   {
     "title": "Cut",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Performance",
     "organizer": null,
     "duration": null,
@@ -4981,7 +4981,7 @@
   },
   {
     "title": "Widerstand hat viele Bühnen: Strategien gegen Rechts",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Kino/Workshops/Lesungen",
     "genre": "Panel",
     "organizer": null,
     "duration": "90 Min.",
@@ -5176,7 +5176,7 @@
   },
   {
     "title": "DerDieDas Sammy",
-    "type": "Musik",
+    "type": "Kinderprogramm",
     "genre": "Konzert",
     "organizer": null,
     "duration": "60 Min.",
@@ -5206,7 +5206,7 @@
   },
   {
     "title": "Hieronyma Busch, Pastor Leumund und F.S.Blumm",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Performance",
     "organizer": null,
     "duration": null,
@@ -5386,7 +5386,7 @@
   },
   {
     "title": "D!e GÄNG",
-    "type": "Musik",
+    "type": "Kinderprogramm",
     "genre": "Konzert",
     "organizer": null,
     "duration": "60 Min.",
@@ -5521,7 +5521,7 @@
   },
   {
     "title": "Rêve encore plus",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Vouchershow",
     "genre": "Zeitgenössischer Zirkus",
     "organizer": null,
     "duration": "50 Min.",
@@ -5656,7 +5656,7 @@
   },
   {
     "title": "Wurstical",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Theater / Performance",
     "organizer": null,
     "duration": "40 Min.",
@@ -5866,7 +5866,7 @@
   },
   {
     "title": "MDR – Death from Laughter",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Vouchershow",
     "genre": "Zeitgenössischer Zirkus / Clown",
     "organizer": null,
     "duration": "70 Min.",
@@ -5941,7 +5941,7 @@
   },
   {
     "title": "La Soirée",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Vouchershow",
     "genre": "Zeitgenössischer Zirkus",
     "organizer": null,
     "duration": "60 Min.",
@@ -6046,7 +6046,7 @@
   },
   {
     "title": "Mietrechts-Kneipenquiz",
-    "type": "Sideshows/Walkacts/Installationen",
+    "type": "Kino/Workshops/Lesungen",
     "genre": "Quizshow",
     "organizer": null,
     "duration": "60 Min.",
@@ -6331,7 +6331,7 @@
   },
   {
     "title": "Rêve encore plus",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Vouchershow",
     "genre": "Zeitgenössischer Zirkus",
     "organizer": null,
     "duration": "50 Min.",
@@ -6496,7 +6496,7 @@
   },
   {
     "title": "Bürokrammist",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Tanz / Performance",
     "organizer": null,
     "duration": "20 Min.",
@@ -6526,7 +6526,7 @@
   },
   {
     "title": "Call me, wenn die Erde brennt",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Theater / Performance",
     "organizer": null,
     "duration": "40 Min.",
@@ -6571,7 +6571,7 @@
   },
   {
     "title": "Opéra pour sèche cheveux",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Vouchershow",
     "genre": "Zeitgenössischer Zirkus",
     "organizer": null,
     "duration": "60 Min.",
@@ -7141,7 +7141,7 @@
   },
   {
     "title": "Fahrrad Halunk:innen",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Bikergang mit Bildungsauftrag",
     "organizer": null,
     "duration": null,
@@ -7171,7 +7171,7 @@
   },
   {
     "title": "Lange Leitung",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Hörspiele",
     "organizer": null,
     "duration": null,
@@ -7201,7 +7201,7 @@
   },
   {
     "title": "Opéra pour sèche cheveux",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Vouchershow",
     "genre": "Zeitgenössischer Zirkus",
     "organizer": null,
     "duration": "60 Min.",
@@ -7231,7 +7231,7 @@
   },
   {
     "title": "Spielewald",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Zocken im Wald",
     "organizer": null,
     "duration": null,
@@ -7471,7 +7471,7 @@
   },
   {
     "title": "Villa Vulva",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Figurentheater",
     "organizer": null,
     "duration": "40 Min.",
@@ -7561,7 +7561,7 @@
   },
   {
     "title": "Rêve encore plus",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Vouchershow",
     "genre": "Zeitgenössischer Zirkus",
     "organizer": null,
     "duration": "50 Min.",
@@ -7921,7 +7921,7 @@
   },
   {
     "title": "Astro Hanfred Seelensterne",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Performance",
     "organizer": null,
     "duration": null,
@@ -7966,7 +7966,7 @@
   },
   {
     "title": "POMMES SCHRANKE",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Drag King Showdown",
     "organizer": null,
     "duration": "30 Min.",
@@ -8116,7 +8116,7 @@
   },
   {
     "title": "Zirkuskind",
-    "type": "Kinderprogramm",
+    "type": "Kino/Workshops/Lesungen",
     "genre": "Kino",
     "organizer": null,
     "duration": "1:26",
@@ -8191,7 +8191,7 @@
   },
   {
     "title": "Kollektiv Eigenklang",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Musik",
     "genre": "Improvisationsbühne",
     "organizer": null,
     "duration": null,
@@ -8206,7 +8206,7 @@
   },
   {
     "title": "POMMES SCHRANKE",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Drag King Showdown",
     "organizer": null,
     "duration": "30 Min.",
@@ -8296,7 +8296,7 @@
   },
   {
     "title": "Ein Resistänzchen (Das Samenbomben-Manifest)",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Sideshows/Walkacts/Installationen",
     "genre": "Spoken Word Performace",
     "organizer": null,
     "duration": "20 Min.",
@@ -8356,7 +8356,7 @@
   },
   {
     "title": "R.OSA - 10 exercises for new virtuosities",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Vouchershow",
     "genre": "Zeitgenössischer Tanz",
     "organizer": null,
     "duration": "45 Min.",
@@ -8536,7 +8536,7 @@
   },
   {
     "title": "MDR – Death from Laughter",
-    "type": "Theater/Tanz/Zirkus",
+    "type": "Vouchershow",
     "genre": "Zeitgenössischer Zirkus / Clown",
     "organizer": null,
     "duration": "70 Min.",

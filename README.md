@@ -22,9 +22,9 @@ dependency-freie Scraper
 liest die Spielzeiten aus den Programmdetails und übernimmt Beschreibungen,
 Bühnen, Genres und Programmlinks.
 
-Die Zuordnung der Website-Genres zu den App-Kategorien steht in
-[`scripts/program_categories.json`](scripts/program_categories.json). Das
-ursprüngliche Website-Genre bleibt zusätzlich im Feld `genre` erhalten.
+Die Kategorie wird direkt aus der jeweiligen Kategorie-Sektion der Website
+übernommen. Das ursprüngliche Website-Genre bleibt zusätzlich im Feld `genre`
+erhalten.
 
 GitHub Actions führt die Aktualisierung täglich aus. Der Workflow kann auch
 manuell gestartet werden:
@@ -62,6 +62,5 @@ Danach `http://localhost:8000` öffnen. Alternativ kann das Repository direkt
 ├─ data.json
 ├─ scripts/
 │  ├─ fetch_program_from_website.py
-│  └─ program_categories.json
 └─ .github/workflows/update-program.yml
 ```
