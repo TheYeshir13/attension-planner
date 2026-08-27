@@ -6,14 +6,28 @@ body {
   background: #f5f5f5;
   color: #222;
 }
-header {
+.app-header {
   background: #1f3864;
   color: #fff;
   padding: 0.75rem 1rem;
 }
-header h1 { margin: 0; font-size: 1.3rem; }
-header p { margin: 0.25rem 0 0; font-size: 0.9rem; }
-main {
+.app-header-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.app-header h1 { margin: 0; font-size: 1.3rem; }
+.app-header p { margin: 0.25rem 0 0; font-size: 0.9rem; max-width: 40rem; }
+.app-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+}
+.app-filters label { display: flex; align-items: center; gap: 0.35rem; }
+.app-filters select { padding: 0.25rem 0.5rem; border-radius: 4px; border: none; }
+
+.app-main {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
@@ -25,53 +39,81 @@ main {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.06);
 }
-#calendar h2, #plan h2 { margin-top: 0; font-size: 1.05rem; }
-.calendar-controls {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-bottom: 0.5rem;
-  gap: 0.5rem;
+#plan h2 { margin-top: 0; font-size: 1.05rem; }
+.plan-hint { font-size: 0.8rem; color: #555; }
+
+/* Kalenderlayout: mobil ein Tag, Desktop mehrere Spalten */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: 80px minmax(0, 1fr);
+  border-collapse: collapse;
+}
+.calendar-time-cell {
+  border-right: 1px solid #ddd;
+  padding: 0.35rem 0.25rem;
   font-size: 0.85rem;
+  font-weight: 600;
 }
-.calendar-controls select { padding: 0.25rem 0.5rem; }
-#calendar-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
+.calendar-day-row {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
-.time-row { border-bottom: 1px solid #eee; padding-bottom: 0.35rem; }
-.time-label { font-weight: 600; font-size: 0.85rem; margin-bottom: 0.2rem; }
-.slot-list { display: flex; flex-direction: column; gap: 0.25rem; }
-.show-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.4rem;
-  padding: 0.25rem 0.35rem;
+.calendar-slot-col {
+  border-left: 1px solid #eee;
+  padding: 0.25rem;
+}
+
+@media (min-width: 900px) {
+  .app-main { flex-direction: row; align-items: flex-start; }
+  #calendar { flex: 3 1 65%; }
+  #plan { flex: 1 1 30%; }
+  .calendar-grid { grid-template-columns: 80px repeat(4, minmax(0, 1fr)); }
+  .calendar-day-row { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+.calendar-slot {
+  margin-bottom: 0.25rem;
+}
+
+.show-card {
+  position: relative;
+  padding: 0.3rem 0.4rem;
   border-radius: 6px;
   background: #fafafa;
+  font-size: 0.85rem;
+  cursor: pointer;
 }
-.show-item input[type="checkbox"] { margin-top: 0.1rem; }
-.show-main {
-  flex: 1;
+.show-card.mobile-clickable { cursor: pointer; }
+.show-card-title {
+  font-weight: 500;
 }
-.show-title { font-weight: 500; font-size: 0.9rem; }
-.show-meta { font-size: 0.75rem; color: #555; }
-.show-actions {
+.show-card-meta {
+  font-size: 0.75rem;
+  color: #555;
+}
+.show-card-controls {
+  margin-top: 0.2rem;
   display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
 }
-.show-actions button {
-  padding: 0.2rem 0.4rem;
-  font-size: 0.8rem;
+.show-card-controls input[type=checkbox] { margin-right: 0.3rem; }
+.show-card-controls button {
+  padding: 0.15rem 0.4rem;
+  font-size: 0.75rem;
   border-radius: 4px;
   border: none;
   background: #1f3864;
   color: #fff;
   cursor: pointer;
 }
-.show-actions button:hover { background: #2b4f8a; }
+.show-card-controls button:hover { background: #2b4f8a; }
+
+/* Typ-Farben aus Excel */
+.show-type-Kino\/Workshops\/Lesungen { background: #FCE5CD; }
+.show-type-Vouchershow { background: #C9DAF8; }
+
 #plan-list {
   list-style: none;
   padding-left: 0;
@@ -105,15 +147,11 @@ footer {
   font-size: 0.7rem;
   color: #666;
 }
-@media (min-width: 768px) {
-  main { flex-direction: row; align-items: flex-start; }
-  #calendar { flex: 2 1 60%; }
-  #plan { flex: 1 1 36%; }
-}
+
 @media print {
-  header, #calendar, footer, .modal { display: none; }
+  .app-header, #calendar, footer, .modal { display: none; }
   body { background: #fff; }
-  main { padding: 0; }
+  .app-main { padding: 0; }
   #plan { box-shadow: none; border-radius: 0; width: 100%; }
 }
 
