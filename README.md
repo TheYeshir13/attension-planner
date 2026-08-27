@@ -1,15 +1,66 @@
 # at.tension Show Planner
 
-Kleine statische Webapp zur persönlichen Programmplanung für at.tension #11.
+Statische Webapp zur persönlichen Programmplanung für at.tension #11.
 
 ## Funktionen
 
 - Tages-Tabs und chronologische Zeitblöcke
-- Filter nach Show-Typ
-- Auswahl eines persönlichen Plans
-- Detailansicht mit Beschreibung und Link zum offiziellen Programm
-- PDF-Druck und iCal-Export
+- Filter und Farbcodierung nach vier Kategorien:
+  `Vouchershow`, `Theater/Tanz/Zirkus`,
+  `Sideshows/Walkacts/Installationen` und `Kinderprogramm`
+- Shows zum persönlichen Plan hinzufügen und daraus entfernen
+- Detailansicht mit Beschreibung, Bühne und Link zum offiziellen Programm
+- Export als PDF oder iCalendar-Datei (`.ics`)
 
-## Daten
+## Datenaktualisierung
 
-`data.json` enthält die Show-Termine. Sie wird aus `at.tension-2026.xlsx` erzeugt; bei leeren Zeit-Zellen im Tab `Show-Kalender` muss die letzte Zeit nach unten übernommen werden, damit parallele Shows korrekt gruppiert werden.
+Die Termindaten in `data.json` werden direkt aus der offiziellen
+[Programmseite](https://attension-festival.de/programm) erzeugt. Der
+dependency-freie Scraper
+[`scripts/fetch_program_from_website.py`](scripts/fetch_program_from_website.py)
+liest die Spielzeiten aus den Programmdetails und übernimmt Beschreibungen,
+Bühnen, Genres und Programmlinks.
+
+Die Zuordnung der Website-Genres zu den vier App-Kategorien steht in
+[`scripts/program_categories.json`](scripts/program_categories.json). Das
+ursprüngliche Website-Genre bleibt zusätzlich im Feld `genre` erhalten.
+
+GitHub Actions führt die Aktualisierung täglich aus. Der Workflow kann auch
+manuell gestartet werden:
+
+`.github/workflows/update-program.yml`
+
+Für eine lokale Aktualisierung:
+
+```bash
+python scripts/fetch_program_from_website.py data.json
+```
+
+Der Scraper bricht bei einer leeren oder unerwarteten Antwort ab, damit eine
+funktionierende `data.json` nicht versehentlich überschrieben wird.
+
+## Lokale Nutzung
+
+Da der Browser `data.json` per `fetch` lädt, muss die App über einen lokalen
+Webserver gestartet werden:
+
+```bash
+python -m http.server
+```
+
+Danach `http://localhost:8000` öffnen. Alternativ kann das Repository direkt
+über GitHub Pages veröffentlicht werden.
+
+## Projektstruktur
+
+```text
+.
+├─ index.html
+├─ styles.css
+├─ app.js
+├─ data.json
+├─ scripts/
+│  ├─ fetch_program_from_website.py
+│  └─ program_categories.json
+└─ .github/workflows/update-program.yml
+```
