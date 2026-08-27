@@ -194,3 +194,23 @@ footer {
 .detail-description { margin-top: 0.5rem; white-space: pre-line; }
 .detail-extra { font-size: 0.8rem; color: #555; }
 #detail-link-container a { color: #1f3864; text-decoration: underline; }
+
+
+.calendar-header-row {
+  display: grid;
+  grid-template-columns: 80px repeat(4, minmax(0, 1fr));
+  font-weight: 600;
+  border-bottom: 1px solid #ddd;
+}
+.calendar-header-time {
+  padding: 0.35rem 0.25rem;
+}
+.calendar-header-day {
+  padding: 0.35rem 0.25rem;
+  text-align: center;
+}
+.calendar-row {
+  display: grid;
+  grid-template-columns: 80px repeat(4, minmax(0, 1fr));
+}
+
