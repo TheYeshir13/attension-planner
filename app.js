@@ -81,32 +81,39 @@ function renderCalendar() {
       const slotShows = shows.filter(s => s.day === day && s.time === time);
       slotShows.forEach(s => {
         const item = document.createElement('div');
-        const typeClass = s.type ? ' show-type-' + cssSafeType(s.type) : '';
-        item.className = 'show-item' + typeClass;
+        item.className = 'show-item';
 
         const cb = document.createElement('input');
         cb.type = 'checkbox';
         cb.checked = selection.has(showKey(s));
         cb.addEventListener('change', () => toggleShow(s));
 
-        const label = document.createElement('div');
-        const titleSpan = document.createElement('div');
-        titleSpan.className = 'show-title';
-        titleSpan.textContent = `${day} ${time} · ${s.title}`;
-
-        const metaSpan = document.createElement('div');
-        metaSpan.className = 'show-meta';
+        const main = document.createElement('div');
+        main.className = 'show-main';
+        const titleDiv = document.createElement('div');
+        titleDiv.className = 'show-title';
+        titleDiv.textContent = `${day} ${time} · ${s.title}`;
+        const metaDiv = document.createElement('div');
+        metaDiv.className = 'show-meta';
         const parts = [];
         if (s.type) parts.push(s.type);
         if (s.stage) parts.push(s.stage);
         if (s.language) parts.push(s.language);
-        metaSpan.textContent = parts.join(' · ');
+        metaDiv.textContent = parts.join(' · ');
+        main.appendChild(titleDiv);
+        if (parts.length) main.appendChild(metaDiv);
 
-        label.appendChild(titleSpan);
-        if (parts.length) label.appendChild(metaSpan);
+        const actions = document.createElement('div');
+        actions.className = 'show-actions';
+        const detailsBtn = document.createElement('button');
+        detailsBtn.type = 'button';
+        detailsBtn.textContent = 'Details';
+        detailsBtn.addEventListener('click', () => openDetails(s));
+        actions.appendChild(detailsBtn);
 
         item.appendChild(cb);
-        item.appendChild(label);
+        item.appendChild(main);
+        item.appendChild(actions);
         slotDiv.appendChild(item);
       });
     });
@@ -116,10 +123,6 @@ function renderCalendar() {
       container.appendChild(rowDiv);
     }
   });
-}
-
-function cssSafeType(type) {
-  return type.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9_\-]/g, '/');
 }
 
 function showKey(s) {
@@ -164,20 +167,61 @@ function printPlan() {
   window.print();
 }
 
+function openDetails(show) {
+  const modal = document.getElementById('detail-modal');
+  modal.classList.add('open');
+  modal.setAttribute('aria-hidden', 'false');
+
+  document.getElementById('detail-title').textContent = show.title;
+
+  const metaParts = [];
+  if (show.organizer) metaParts.push(show.organizer);
+  if (show.stage) metaParts.push(show.stage);
+  if (show.type) metaParts.push(show.type);
+  if (show.language) metaParts.push(show.language);
+  if (show.duration) metaParts.push(show.duration);
+  if (show.minAge) metaParts.push(`ab ${show.minAge}`);
+  document.getElementById('detail-meta').textContent = metaParts.join(' · ');
+
+  const desc = show.fullDescription || show.shortDescription || '';
+  document.getElementById('detail-description').textContent = desc;
+
+  const extraParts = [];
+  if (show.day && show.time) extraParts.push(`Festival-Slot: ${show.day} ${show.time}`);
+  document.getElementById('detail-extra').textContent = extraParts.join(' · ');
+
+  const linkContainer = document.getElementById('detail-link-container');
+  linkContainer.innerHTML = '';
+  if (show.programUrl) {
+    const a = document.createElement('a');
+    a.href = show.programUrl;
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+    a.textContent = 'Zum Programm auf attension-festival.de';
+    linkContainer.appendChild(a);
+  }
+}
+
+function closeDetails() {
+  const modal = document.getElementById('detail-modal');
+  modal.classList.remove('open');
+  modal.setAttribute('aria-hidden', 'true');
+}
+
+function setupModal() {
+  document.querySelectorAll('[data-close-modal]').forEach(el => {
+    el.addEventListener('click', closeDetails);
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeDetails();
+  });
+}
+
 function toICSDateTime(show) {
-  // Festival 03.09.2026 (Do) bis 06.09.2026 (So)
-  const dayMap = {
-    'Do': '20260903', // Donnerstag, 03.09.2026
-    'Fr': '20260904', // Freitag, 04.09.2026
-    'Sa': '20260905', // Samstag, 05.09.2026
-    'So': '20260906'  // Sonntag, 06.09.2026
-  };
-
-  const dateStr = dayMap[show.day] || '20260903'; // Fallback: erster Festivaltag
+  const dayMap = { 'Do': '20260903', 'Fr': '20260904', 'Sa': '20260905', 'So': '20260906' };
+  const dateStr = dayMap[show.day] || '20260903';
   const time = (show.time || '00:00').replace(':', '');
-  const timeHM = time + '00'; // HHMMSS
-
-  // Ergebnis im iCal‑Format YYYYMMDDTHHMMSS
+  const timeHM = time + '00';
   return `${dateStr}T${timeHM}`;
 }
 
@@ -193,7 +237,6 @@ function parseDurationMinutes(show) {
 }
 
 function addMinutesToICS(dt, minutes) {
-  // dt im Format YYYYMMDDTHHMMSS
   const year = parseInt(dt.slice(0,4),10);
   const month = parseInt(dt.slice(4,6),10);
   const day = parseInt(dt.slice(6,8),10);
@@ -215,7 +258,7 @@ function createICS(showsInPlan) {
   const lines = [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
-    'PRODID:-//Plantrio at.tension Planner//DE'
+    'PRODID:-//theYeshir at.tension Planner//DE'
   ];
 
   showsInPlan.forEach(s => {
@@ -223,7 +266,7 @@ function createICS(showsInPlan) {
     const minutes = parseDurationMinutes(s);
     const dtEnd = addMinutesToICS(dtStart, minutes);
     lines.push('BEGIN:VEVENT');
-    lines.push(`UID:${showKey(s)}@plantrio-attension`);
+    lines.push(`UID:${showKey(s)}@theYeshir-attension`);
     lines.push(`DTSTAMP:${dtStart}`);
     lines.push(`DTSTART:${dtStart}`);
     lines.push(`DTEND:${dtEnd}`);
@@ -254,6 +297,7 @@ function downloadICS() {
 
 document.addEventListener('DOMContentLoaded', () => {
   loadData();
+  setupModal();
   document.getElementById('btn-print').addEventListener('click', printPlan);
   document.getElementById('btn-ical').addEventListener('click', downloadICS);
 });
