@@ -91,6 +91,7 @@ function currentTypeFilter() {
   return select.value || null;
 }
 
+// Times as rows, days as columns
 function renderCalendar() {
   const grid = document.getElementById('calendar-grid');
   grid.innerHTML = '';
@@ -100,6 +101,26 @@ function renderCalendar() {
   const dayFilter = currentDayFilter();
   const typeFilter = currentTypeFilter();
 
+  // Header row: empty cell + day labels
+  const headerRow = document.createElement('div');
+  headerRow.className = 'calendar-header-row';
+
+  const emptyHead = document.createElement('div');
+  emptyHead.className = 'calendar-header-time';
+  emptyHead.textContent = 'Zeit';
+  headerRow.appendChild(emptyHead);
+
+  const daysToShow = dayFilter ? days.filter(d => d === dayFilter) : days;
+  daysToShow.forEach(day => {
+    const dayHead = document.createElement('div');
+    dayHead.className = 'calendar-header-day';
+    dayHead.textContent = day;
+    headerRow.appendChild(dayHead);
+  });
+
+  grid.appendChild(headerRow);
+
+  // Body: each time = row, days = columns
   times.forEach(time => {
     const row = document.createElement('div');
     row.className = 'calendar-row';
@@ -109,10 +130,6 @@ function renderCalendar() {
     timeCell.textContent = time;
     row.appendChild(timeCell);
 
-    const dayRow = document.createElement('div');
-    dayRow.className = 'calendar-day-row';
-
-    const daysToShow = dayFilter ? days.filter(d => d === dayFilter) : days;
     daysToShow.forEach(day => {
       const col = document.createElement('div');
       col.className = 'calendar-slot-col';
@@ -122,7 +139,7 @@ function renderCalendar() {
       const slotShows = shows.filter(s => s.day === day && s.time === time && (!typeFilter || s.type === typeFilter));
       slotShows.forEach(show => {
         const card = document.createElement('div');
-        const typeClass = show.type ? 'show-type-' + show.type.replace(/\//g, '\/') : '';
+        const typeClass = show.type ? 'show-type-' + show.type.replace(/\//g, '-') : '';
         card.className = 'show-card mobile-clickable ' + typeClass;
 
         const titleDiv = document.createElement('div');
@@ -133,7 +150,6 @@ function renderCalendar() {
         metaDiv.className = 'show-card-meta';
         const metaParts = [];
         if (show.stage) metaParts.push(show.stage);
-        if (show.type) metaParts.push(show.type);
         if (show.language) metaParts.push(show.language);
         metaDiv.textContent = metaParts.join(' · ');
 
@@ -166,7 +182,7 @@ function renderCalendar() {
         card.appendChild(metaDiv);
         card.appendChild(controls);
 
-        // Mobil: Klick auf Titel oder Karte fügt zum Plan hinzu
+        // Mobil: Klick auf Karte fügt zum Plan hinzu
         card.addEventListener('click', () => {
           toggleShow(show);
         });
@@ -175,10 +191,9 @@ function renderCalendar() {
       });
 
       col.appendChild(slotDiv);
-      dayRow.appendChild(col);
+      row.appendChild(col);
     });
 
-    row.appendChild(dayRow);
     grid.appendChild(row);
   });
 }
@@ -280,20 +295,16 @@ function setupModal() {
 }
 
 // iCal-Export
-
 function toICSDateTime(show) {
-  // Festival 03.09.2026 (Do) bis 06.09.2026 (So)
   const dayMap = { Do: '20260903', Fr: '20260904', Sa: '20260905', So: '20260906' };
   const dateStr = dayMap[show.day] || '20260903';
   const time = (show.time || '00:00').replace(':', '');
-  const timeHM = time + '00'; // HHMMSS
+  const timeHM = time + '00';
   return `${dateStr}T${timeHM}`;
 }
 
 function icsEscape(text) {
-  return (text || '')
-    .replace(/,/g, '\\,')
-    .replace(/;/g, '\\;');
+  return (text || '').replace(/,/g, '\,').replace(/;/g, '\;');
 }
 
 function parseDurationMinutes(show) {
@@ -310,17 +321,14 @@ function addMinutesToICS(dt, minutes) {
   const hour = parseInt(dt.slice(9, 11), 10);
   const min = parseInt(dt.slice(11, 13), 10);
   const sec = parseInt(dt.slice(13, 15), 10);
-
   const dateObj = new Date(Date.UTC(year, month - 1, day, hour, min, sec));
   dateObj.setUTCMinutes(dateObj.getUTCMinutes() + minutes);
-
   const y = dateObj.getUTCFullYear();
   const m2 = String(dateObj.getUTCMonth() + 1).padStart(2, '0');
   const d2 = String(dateObj.getUTCDate()).padStart(2, '0');
   const h2 = String(dateObj.getUTCHours()).padStart(2, '0');
   const mi2 = String(dateObj.getUTCMinutes()).padStart(2, '0');
   const s2 = String(dateObj.getUTCSeconds()).padStart(2, '0');
-
   return `${y}${m2}${d2}T${h2}${mi2}${s2}`;
 }
 
@@ -335,7 +343,6 @@ function createICS(showsInPlan) {
     const dtStart = toICSDateTime(s);
     const minutes = parseDurationMinutes(s);
     const dtEnd = addMinutesToICS(dtStart, minutes);
-
     lines.push('BEGIN:VEVENT');
     lines.push(`UID:${showKey(s)}@theYeshir-attension`);
     lines.push(`DTSTAMP:${dtStart}`);
@@ -347,24 +354,21 @@ function createICS(showsInPlan) {
   });
 
   lines.push('END:VCALENDAR');
-  return lines.join('\r\n');
+  return lines.join('');
 }
 
 function downloadICS() {
   const selected = getSelectedShows();
   if (!selected.length) return;
-
   const icsContent = createICS(selected);
   const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
   const url = URL.createObjectURL(blob);
-
   const a = document.createElement('a');
   a.href = url;
   a.download = 'attension-plan.ics';
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
-
   URL.revokeObjectURL(url);
 }
 
