@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>at.tension Planner</title>
+  <title>at.tension Show Planner</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -35,8 +35,21 @@
   </main>
 
   <footer>
-    <small>TheYeshir · at.tension #11 Planner</small>
+    <small>© 2026 theYeshir · at.tension Show Planner</small>
   </footer>
+
+  <!-- Detail-Modal -->
+  <div id="detail-modal" class="modal" aria-hidden="true">
+    <div class="modal-overlay" data-close-modal></div>
+    <div class="modal-content">
+      <button class="modal-close" data-close-modal>&times;</button>
+      <h3 id="detail-title"></h3>
+      <p class="detail-meta" id="detail-meta"></p>
+      <p class="detail-description" id="detail-description"></p>
+      <p class="detail-extra" id="detail-extra"></p>
+      <p id="detail-link-container"></p>
+    </div>
+  </div>
 
   <script src="app.js"></script>
 </body>
