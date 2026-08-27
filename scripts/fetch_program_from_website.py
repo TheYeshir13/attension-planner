@@ -75,6 +75,10 @@ def first_descendant(node, predicate):
     return next((item for item in descendants(node) if predicate(item)), None)
 
 
+def has_program_item_descendant(node):
+    return any(class_contains(item, "program-item") for item in descendants(node))
+
+
 def label_value(node, label):
     label_node = first_descendant(node, lambda item: text(item).casefold() == label.casefold())
     if not label_node or not label_node.children:
@@ -115,6 +119,8 @@ def parse_items(source, category_map=None):
     for node in descendants(parser.root):
         if not class_contains(node, "program-item"):
             continue
+        if has_program_item_descendant(node):
+            continue
         anchor = first_descendant(
             node, lambda item: item.attrs.get("id", "").startswith("program_")
         )
@@ -127,6 +133,16 @@ def parse_items(source, category_map=None):
             or "font-bold" in item.attrs.get("class", ""),
         )
         title = text(title_node) if title_node else ""
+        if not title:
+            title_node = first_descendant(
+                node,
+                lambda item: (
+                    item.tag == "div"
+                    and "pb-2" in item.attrs.get("class", "")
+                    and "text-sm" in item.attrs.get("class", "")
+                ),
+            )
+            title = text(title_node) if title_node else ""
         if not title:
             continue
 
