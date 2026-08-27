@@ -280,22 +280,26 @@ function setupModal() {
 }
 
 // iCal-Export
+
 function toICSDateTime(show) {
+  // Festival 03.09.2026 (Do) bis 06.09.2026 (So)
   const dayMap = { Do: '20260903', Fr: '20260904', Sa: '20260905', So: '20260906' };
   const dateStr = dayMap[show.day] || '20260903';
   const time = (show.time || '00:00').replace(':', '');
-  const timeHM = time + '00';
+  const timeHM = time + '00'; // HHMMSS
   return `${dateStr}T${timeHM}`;
 }
 
 function icsEscape(text) {
-  return (text || '').replace(/,/g, '\,').replace(/;/g, '\;');
+  return (text || '')
+    .replace(/,/g, '\\,')
+    .replace(/;/g, '\\;');
 }
 
 function parseDurationMinutes(show) {
   const d = show.duration;
   if (!d || typeof d !== 'string') return 60;
-  const match = d.match(/[0-9]+/);
+  const match = d.match(/\d+/);
   return match ? parseInt(match[0], 10) : 60;
 }
 
@@ -306,14 +310,17 @@ function addMinutesToICS(dt, minutes) {
   const hour = parseInt(dt.slice(9, 11), 10);
   const min = parseInt(dt.slice(11, 13), 10);
   const sec = parseInt(dt.slice(13, 15), 10);
+
   const dateObj = new Date(Date.UTC(year, month - 1, day, hour, min, sec));
   dateObj.setUTCMinutes(dateObj.getUTCMinutes() + minutes);
+
   const y = dateObj.getUTCFullYear();
   const m2 = String(dateObj.getUTCMonth() + 1).padStart(2, '0');
   const d2 = String(dateObj.getUTCDate()).padStart(2, '0');
   const h2 = String(dateObj.getUTCHours()).padStart(2, '0');
   const mi2 = String(dateObj.getUTCMinutes()).padStart(2, '0');
   const s2 = String(dateObj.getUTCSeconds()).padStart(2, '0');
+
   return `${y}${m2}${d2}T${h2}${mi2}${s2}`;
 }
 
@@ -328,6 +335,7 @@ function createICS(showsInPlan) {
     const dtStart = toICSDateTime(s);
     const minutes = parseDurationMinutes(s);
     const dtEnd = addMinutesToICS(dtStart, minutes);
+
     lines.push('BEGIN:VEVENT');
     lines.push(`UID:${showKey(s)}@theYeshir-attension`);
     lines.push(`DTSTAMP:${dtStart}`);
@@ -339,22 +347,24 @@ function createICS(showsInPlan) {
   });
 
   lines.push('END:VCALENDAR');
-  return lines.join('
-');
+  return lines.join('\r\n');
 }
 
 function downloadICS() {
   const selected = getSelectedShows();
   if (!selected.length) return;
+
   const icsContent = createICS(selected);
   const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
   const url = URL.createObjectURL(blob);
+
   const a = document.createElement('a');
   a.href = url;
   a.download = 'attension-plan.ics';
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
+
   URL.revokeObjectURL(url);
 }
 
