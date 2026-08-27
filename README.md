@@ -8,7 +8,7 @@ Statische Webapp zur persönlichen Programmplanung für at.tension #11.
 - Filter und Farbcodierung nach fünf Kategorien:
   `Vouchershow`, `Theater/Tanz/Zirkus`,
   `Sideshows/Walkacts/Installationen`, `Kinderprogramm` und
-  `Kino/Workshops/Lesungen`
+  `Kino/Workshops/Lesungen` sowie `Musik`
 - Shows zum persönlichen Plan hinzufügen und daraus entfernen
 - Detailansicht mit Beschreibung, Bühne und Link zum offiziellen Programm
 - Export als PDF oder iCalendar-Datei (`.ics`)

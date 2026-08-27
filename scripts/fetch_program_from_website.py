@@ -16,6 +16,7 @@ THEATER = "Theater/Tanz/Zirkus"
 SIDESHOWS = "Sideshows/Walkacts/Installationen"
 CHILDREN = "Kinderprogramm"
 KINO = "Kino/Workshops/Lesungen"
+MUSIC = "Musik"
 DAY_MAP = {"DO": "Do", "FR": "Fr", "SA": "Sa", "SO": "So"}
 DAY_ORDER = ["Do", "Fr", "Sa", "So"]
 TIME_RE = re.compile(r"\b(DO|FR|SA|SO)\s+(\d{1,2})[.:](\d{2})\b", re.IGNORECASE)
@@ -103,6 +104,10 @@ def fallback_category(item_type, title):
     value = f"{item_type or ''} {title}".casefold()
     if any(word in value for word in ("kind", "bilderbuch", "tante moos")):
         return CHILDREN
+    if any(word in value for word in (
+        "dj", "konzert", "live-act", "musikalische erzählung",
+    )):
+        return MUSIC
     if any(word in value for word in ("workshop", "lesung", "vortrag", "kino")):
         return KINO
     if any(word in value for word in (
