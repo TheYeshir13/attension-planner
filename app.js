@@ -2,11 +2,19 @@ let shows = [];
 let selection = new Set();
 
 async function loadData() {
-  const res = await fetch('data.json');
-  shows = await res.json();
-  initDayFilter();
-  renderCalendar();
-  renderPlan();
+  try {
+    const res = await fetch('data.json');
+    if (!res.ok) {
+      console.error('Fehler beim Laden von data.json:', res.status, res.statusText);
+      return;
+    }
+    shows = await res.json();
+    initDayFilter();
+    renderCalendar();
+    renderPlan();
+  } catch (err) {
+    console.error('Fehler beim Parsen von data.json:', err);
+  }
 }
 
 function getDays() {
