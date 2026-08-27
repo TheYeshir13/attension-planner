@@ -5,9 +5,10 @@ Statische Webapp zur persönlichen Programmplanung für at.tension #11.
 ## Funktionen
 
 - Tages-Tabs und chronologische Zeitblöcke
-- Filter und Farbcodierung nach vier Kategorien:
+- Filter und Farbcodierung nach fünf Kategorien:
   `Vouchershow`, `Theater/Tanz/Zirkus`,
-  `Sideshows/Walkacts/Installationen` und `Kinderprogramm`
+  `Sideshows/Walkacts/Installationen`, `Kinderprogramm` und
+  `Kino/Workshops/Lesungen`
 - Shows zum persönlichen Plan hinzufügen und daraus entfernen
 - Detailansicht mit Beschreibung, Bühne und Link zum offiziellen Programm
 - Export als PDF oder iCalendar-Datei (`.ics`)
@@ -21,7 +22,7 @@ dependency-freie Scraper
 liest die Spielzeiten aus den Programmdetails und übernimmt Beschreibungen,
 Bühnen, Genres und Programmlinks.
 
-Die Zuordnung der Website-Genres zu den vier App-Kategorien steht in
+Die Zuordnung der Website-Genres zu den App-Kategorien steht in
 [`scripts/program_categories.json`](scripts/program_categories.json). Das
 ursprüngliche Website-Genre bleibt zusätzlich im Feld `genre` erhalten.
 

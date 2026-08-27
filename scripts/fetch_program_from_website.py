@@ -15,6 +15,7 @@ VOUCHERSHOW = "Vouchershow"
 THEATER = "Theater/Tanz/Zirkus"
 SIDESHOWS = "Sideshows/Walkacts/Installationen"
 CHILDREN = "Kinderprogramm"
+KINO = "Kino/Workshops/Lesungen"
 DAY_MAP = {"DO": "Do", "FR": "Fr", "SA": "Sa", "SO": "So"}
 DAY_ORDER = ["Do", "Fr", "Sa", "So"]
 TIME_RE = re.compile(r"\b(DO|FR|SA|SO)\s+(\d{1,2})[.:](\d{2})\b", re.IGNORECASE)
@@ -102,8 +103,10 @@ def fallback_category(item_type, title):
     value = f"{item_type or ''} {title}".casefold()
     if any(word in value for word in ("kind", "bilderbuch", "tante moos")):
         return CHILDREN
+    if any(word in value for word in ("workshop", "lesung", "vortrag", "kino")):
+        return KINO
     if any(word in value for word in (
-        "workshop", "lesung", "vortrag", "kino", "installation", "walkact",
+        "installation", "walkact",
         "sideshow", "radioballett", "spielhalle", "skate", "siebdruck",
         "spendenlauf", "quiz", "crêpe", "crepe", "beauty salon",
     )):
@@ -158,7 +161,7 @@ def parse_items(source, category_map=None):
         description = ""
         for candidate in description_nodes:
             candidate_text = text(candidate)
-            if title not in candidate_text and len(candidate_text) > len(description):
+            if len(candidate_text) > len(description):
                 description = candidate_text
 
         type_node = first_descendant(
