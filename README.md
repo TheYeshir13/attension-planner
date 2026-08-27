@@ -5,7 +5,7 @@ Statische Webapp zur persönlichen Programmplanung für at.tension #11.
 ## Funktionen
 
 - Tages-Tabs und chronologische Zeitblöcke
-- Filter und Farbcodierung nach fünf Kategorien:
+- Filter und Farbcodierung nach sechs Kategorien:
   `Vouchershow`, `Theater/Tanz/Zirkus`,
   `Sideshows/Walkacts/Installationen`, `Kinderprogramm` und
   `Kino/Workshops/Lesungen` sowie `Musik`

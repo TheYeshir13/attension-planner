@@ -100,9 +100,11 @@ def normalize_time(hour, minute):
     return f"{int(hour):02d}:{minute}"
 
 
-def fallback_category(item_type, title):
+def fallback_category(item_type, title, min_age=None):
     value = f"{item_type or ''} {title}".casefold()
     if any(word in value for word in ("kind", "bilderbuch", "tante moos")):
+        return CHILDREN
+    if (item_type or "").casefold() == "kino" and min_age:
         return CHILDREN
     if any(word in value for word in (
         "dj", "konzert", "live-act", "musikalische erzählung",
@@ -175,6 +177,12 @@ def parse_items(source, category_map=None):
             and "bg-primary" in item.attrs.get("class", ""),
         )
         item_type = text(type_node) if type_node else None
+        min_age = label_value(node, "Mindestalter")
+        category = category_map.get(
+            anchor.attrs["id"], fallback_category(item_type, title, min_age)
+        )
+        if item_type and item_type.casefold() == "kino" and min_age:
+            category = CHILDREN
         organizer_node = first_descendant(
             node,
             lambda item: item.tag == "span"
@@ -184,13 +192,11 @@ def parse_items(source, category_map=None):
         organizer = text(organizer_node) if organizer_node else None
         fields = {
             "title": title,
-            "type": category_map.get(
-                anchor.attrs["id"], fallback_category(item_type, title)
-            ),
+            "type": category,
             "genre": item_type,
             "organizer": organizer,
             "duration": label_value(node, "Dauer"),
-            "minAge": label_value(node, "Mindestalter"),
+            "minAge": min_age,
             "language": label_value(node, "Sprache"),
             "stage": label_value(node, "Bühne"),
             "shortDescription": description or None,
