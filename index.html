@@ -7,25 +7,33 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>at.tension Show Planner</h1>
-    <p>Wähle deine Shows und exportiere deinen persönlichen Plan.</p>
-  </header>
-
-  <main>
-    <section id="calendar">
-      <h2>Kalender</h2>
-      <div class="calendar-controls">
+  <header class="app-header">
+    <div class="app-header-inner">
+      <div>
+        <h1>at.tension Show Planner</h1>
+        <p>Plane dein Festival – Shows im Kalender auswählen und deinen persönlichen Plan exportieren.</p>
+      </div>
+      <div class="app-filters">
         <label>
           Tag:
           <select id="day-filter"></select>
         </label>
+        <label>
+          Typ:
+          <select id="type-filter"></select>
+        </label>
       </div>
-      <div id="calendar-grid"></div>
+    </div>
+  </header>
+
+  <main class="app-main">
+    <section id="calendar" aria-label="Show-Kalender">
+      <div id="calendar-grid" class="calendar-grid"></div>
     </section>
 
-    <section id="plan">
+    <section id="plan" aria-label="Mein Plan">
       <h2>Mein Plan</h2>
+      <p class="plan-hint">Tippe auf den Titel (mobil) oder setze das Häkchen (Desktop), um eine Show zum Plan hinzuzufügen.</p>
       <ul id="plan-list"></ul>
       <div class="actions">
         <button id="btn-print">Als PDF (Drucken)</button>
