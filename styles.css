@@ -1,6 +1,4 @@
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   margin: 0;
@@ -13,14 +11,8 @@ header {
   color: #fff;
   padding: 0.75rem 1rem;
 }
-header h1 {
-  margin: 0;
-  font-size: 1.3rem;
-}
-header p {
-  margin: 0.25rem 0 0;
-  font-size: 0.9rem;
-}
+header h1 { margin: 0; font-size: 1.3rem; }
+header p { margin: 0.25rem 0 0; font-size: 0.9rem; }
 main {
   display: flex;
   flex-direction: column;
@@ -33,10 +25,7 @@ main {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.06);
 }
-#calendar h2, #plan h2 {
-  margin-top: 0;
-  font-size: 1.05rem;
-}
+#calendar h2, #plan h2 { margin-top: 0; font-size: 1.05rem; }
 .calendar-controls {
   display: flex;
   justify-content: flex-start;
@@ -45,28 +34,15 @@ main {
   gap: 0.5rem;
   font-size: 0.85rem;
 }
-.calendar-controls select {
-  padding: 0.25rem 0.5rem;
-}
+.calendar-controls select { padding: 0.25rem 0.5rem; }
 #calendar-grid {
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
 }
-.time-row {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 0.35rem;
-}
-.time-label {
-  font-weight: 600;
-  font-size: 0.85rem;
-  margin-bottom: 0.2rem;
-}
-.slot-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
+.time-row { border-bottom: 1px solid #eee; padding-bottom: 0.35rem; }
+.time-label { font-weight: 600; font-size: 0.85rem; margin-bottom: 0.2rem; }
+.slot-list { display: flex; flex-direction: column; gap: 0.25rem; }
 .show-item {
   display: flex;
   align-items: flex-start;
@@ -75,17 +51,27 @@ main {
   border-radius: 6px;
   background: #fafafa;
 }
-.show-item input[type="checkbox"] {
-  margin-top: 0.1rem;
+.show-item input[type="checkbox"] { margin-top: 0.1rem; }
+.show-main {
+  flex: 1;
 }
-.show-title {
-  font-weight: 500;
-  font-size: 0.9rem;
+.show-title { font-weight: 500; font-size: 0.9rem; }
+.show-meta { font-size: 0.75rem; color: #555; }
+.show-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
-.show-meta {
-  font-size: 0.75rem;
-  color: #555;
+.show-actions button {
+  padding: 0.2rem 0.4rem;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  border: none;
+  background: #1f3864;
+  color: #fff;
+  cursor: pointer;
 }
+.show-actions button:hover { background: #2b4f8a; }
 #plan-list {
   list-style: none;
   padding-left: 0;
@@ -96,9 +82,7 @@ main {
   padding: 0.35rem 0;
   font-size: 0.9rem;
 }
-#plan-list li:last-child {
-  border-bottom: none;
-}
+#plan-list li:last-child { border-bottom: none; }
 .actions {
   margin-top: 0.75rem;
   display: flex;
@@ -114,45 +98,61 @@ button {
   cursor: pointer;
   font-size: 0.9rem;
 }
-button:hover {
-  background: #2b4f8a;
-}
+button:hover { background: #2b4f8a; }
 footer {
   text-align: center;
   padding: 0.5rem;
   font-size: 0.7rem;
   color: #666;
 }
-
-/* Typ-Farben als Klassen (Beispiele, kannst du anpassen) */
-.show-type-Vouchershow { background-color: #fff4cc; }
-.show-type-Theater\/Tanz\/Zirkus { background-color: #e2efda; }
-.show-type-Kinderprogramm { background-color: #d9e1f2; }
-.show-type-Sideshows\/Walkacts\/Installationen { background-color: #fce4d6; }
-.show-type-Kino\/Workshops\/Lesungen { background-color: #f2f2f2; }
-
-/* Größere Screens: zwei Spalten (Kalender + Plan nebeneinander) */
 @media (min-width: 768px) {
-  main {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-  #calendar {
-    flex: 2 1 60%;
-  }
-  #plan {
-    flex: 1 1 36%;
-  }
+  main { flex-direction: row; align-items: flex-start; }
+  #calendar { flex: 2 1 60%; }
+  #plan { flex: 1 1 36%; }
 }
-
-/* Print: nur der Plan */
 @media print {
-  header, #calendar, footer { display: none; }
+  header, #calendar, footer, .modal { display: none; }
   body { background: #fff; }
   main { padding: 0; }
-  #plan {
-    box-shadow: none;
-    border-radius: 0;
-    width: 100%;
-  }
+  #plan { box-shadow: none; border-radius: 0; width: 100%; }
 }
+
+/* Modal styles */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal.open { display: flex; }
+.modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+.modal-content {
+  position: relative;
+  max-width: 600px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+.modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.detail-meta { font-size: 0.85rem; color: #555; }
+.detail-description { margin-top: 0.5rem; white-space: pre-line; }
+.detail-extra { font-size: 0.8rem; color: #555; }
+#detail-link-container a { color: #1f3864; text-decoration: underline; }
