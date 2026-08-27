@@ -276,8 +276,7 @@ function createICS(showsInPlan) {
   });
 
   lines.push('END:VCALENDAR');
-  return lines.join('
-');
+  return lines.join('');
 }
 
 function downloadICS() {
