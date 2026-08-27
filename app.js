@@ -1,5 +1,6 @@
 let shows = [];
 let selection = new Set();
+let activeDay = null;
 
 async function loadData() {
   try {
@@ -9,7 +10,7 @@ async function loadData() {
       return;
     }
     shows = await res.json();
-    initDayFilter();
+    initDayTabs();
     initTypeFilter();
     renderCalendar();
     renderPlan();
@@ -28,8 +29,8 @@ function getDays() {
   });
 }
 
-function getTimes() {
-  const times = Array.from(new Set(shows.map(s => s.time))).filter(Boolean);
+function getTimesForDay(day) {
+  const times = Array.from(new Set(shows.filter(s => s.day === day).map(s => s.time))).filter(Boolean);
   return times.sort();
 }
 
@@ -37,25 +38,37 @@ function getTypes() {
   return Array.from(new Set(shows.map(s => s.type))).filter(Boolean).sort();
 }
 
-function initDayFilter() {
-  const select = document.getElementById('day-filter');
+function typeToClass(type) {
+  if (!type) return '';
+  return 'show-type-' + type.replace(/\//g, '-').replace(/\s+/g, '');
+}
+
+function initDayTabs() {
+  const nav = document.getElementById('day-tabs');
   const days = getDays();
-  select.innerHTML = '';
+  nav.innerHTML = '';
 
-  const optAll = document.createElement('option');
-  optAll.value = '';
-  optAll.textContent = 'Alle Tage';
-  select.appendChild(optAll);
+  if (!activeDay || !days.includes(activeDay)) {
+    activeDay = days[0] || null;
+  }
 
-  days.forEach(d => {
-    const opt = document.createElement('option');
-    opt.value = d;
-    opt.textContent = d;
-    select.appendChild(opt);
+  days.forEach(day => {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'day-tab' + (day === activeDay ? ' active' : '');
+    btn.textContent = day;
+    btn.addEventListener('click', () => {
+      activeDay = day;
+      updateActiveTab();
+      renderCalendar();
+    });
+    nav.appendChild(btn);
   });
+}
 
-  select.addEventListener('change', () => {
-    renderCalendar();
+function updateActiveTab() {
+  document.querySelectorAll('.day-tab').forEach(btn => {
+    btn.classList.toggle('active', btn.textContent === activeDay);
   });
 }
 
@@ -81,120 +94,87 @@ function initTypeFilter() {
   });
 }
 
-function currentDayFilter() {
-  const select = document.getElementById('day-filter');
-  return select.value || null;
-}
-
 function currentTypeFilter() {
   const select = document.getElementById('type-filter');
   return select.value || null;
 }
 
-// Times as rows, days as columns
 function renderCalendar() {
-  const grid = document.getElementById('calendar-grid');
-  grid.innerHTML = '';
+  const container = document.getElementById('calendar-list');
+  container.innerHTML = '';
 
-  const days = getDays();
-  const times = getTimes();
-  const dayFilter = currentDayFilter();
+  if (!activeDay) return;
+
   const typeFilter = currentTypeFilter();
+  const times = getTimesForDay(activeDay);
 
-  // Header row: empty cell + day labels
-  const headerRow = document.createElement('div');
-  headerRow.className = 'calendar-header-row';
-
-  const emptyHead = document.createElement('div');
-  emptyHead.className = 'calendar-header-time';
-  emptyHead.textContent = 'Zeit';
-  headerRow.appendChild(emptyHead);
-
-  const daysToShow = dayFilter ? days.filter(d => d === dayFilter) : days;
-  daysToShow.forEach(day => {
-    const dayHead = document.createElement('div');
-    dayHead.className = 'calendar-header-day';
-    dayHead.textContent = day;
-    headerRow.appendChild(dayHead);
-  });
-
-  grid.appendChild(headerRow);
-
-  // Body: each time = row, days = columns
   times.forEach(time => {
-    const row = document.createElement('div');
-    row.className = 'calendar-row';
+    const showsAtTime = shows.filter(s =>
+      s.day === activeDay &&
+      s.time === time &&
+      (!typeFilter || s.type === typeFilter)
+    );
 
-    const timeCell = document.createElement('div');
-    timeCell.className = 'calendar-time-cell';
-    timeCell.textContent = time;
-    row.appendChild(timeCell);
+    if (!showsAtTime.length) return;
 
-    daysToShow.forEach(day => {
-      const col = document.createElement('div');
-      col.className = 'calendar-slot-col';
-      const slotDiv = document.createElement('div');
-      slotDiv.className = 'calendar-slot';
+    const block = document.createElement('div');
+    block.className = 'time-block';
 
-      const slotShows = shows.filter(s => s.day === day && s.time === time && (!typeFilter || s.type === typeFilter));
-      slotShows.forEach(show => {
-        const card = document.createElement('div');
-        const typeClass = show.type ? 'show-type-' + show.type.replace(/\//g, '-') : '';
-        card.className = 'show-card mobile-clickable ' + typeClass;
+    const header = document.createElement('div');
+    header.className = 'time-block-header';
+    header.textContent = time;
+    block.appendChild(header);
 
-        const titleDiv = document.createElement('div');
-        titleDiv.className = 'show-card-title';
-        titleDiv.textContent = show.title;
+    const showsWrap = document.createElement('div');
+    showsWrap.className = 'time-block-shows';
 
-        const metaDiv = document.createElement('div');
-        metaDiv.className = 'show-card-meta';
-        const metaParts = [];
-        if (show.stage) metaParts.push(show.stage);
-        if (show.language) metaParts.push(show.language);
-        metaDiv.textContent = metaParts.join(' · ');
+    showsAtTime.forEach(show => {
+      const card = document.createElement('div');
+      const isSelected = selection.has(showKey(show));
+      card.className = 'show-card ' + typeToClass(show.type) + (isSelected ? ' selected' : '');
 
-        const controls = document.createElement('div');
-        controls.className = 'show-card-controls';
-        const left = document.createElement('div');
-        const cb = document.createElement('input');
-        cb.type = 'checkbox';
-        cb.checked = selection.has(showKey(show));
-        cb.addEventListener('change', e => {
-          e.stopPropagation();
-          toggleShow(show);
-        });
-        left.appendChild(cb);
+      const titleDiv = document.createElement('div');
+      titleDiv.className = 'show-card-title';
+      const check = document.createElement('span');
+      check.className = 'check';
+      check.textContent = isSelected ? '✓' : '';
+      const titleText = document.createElement('span');
+      titleText.textContent = show.title;
+      titleDiv.appendChild(check);
+      titleDiv.appendChild(titleText);
 
-        const right = document.createElement('div');
-        const detailsBtn = document.createElement('button');
-        detailsBtn.type = 'button';
-        detailsBtn.textContent = 'Details';
-        detailsBtn.addEventListener('click', e => {
-          e.stopPropagation();
-          openDetails(show);
-        });
-        right.appendChild(detailsBtn);
+      const metaDiv = document.createElement('div');
+      metaDiv.className = 'show-card-meta';
+      const metaParts = [];
+      if (show.stage) metaParts.push(show.stage);
+      if (show.language) metaParts.push(show.language);
+      if (show.type) metaParts.push(show.type);
+      metaDiv.textContent = metaParts.join(' · ');
 
-        controls.appendChild(left);
-        controls.appendChild(right);
+      const controls = document.createElement('div');
+      controls.className = 'show-card-controls';
+      const detailsBtn = document.createElement('button');
+      detailsBtn.type = 'button';
+      detailsBtn.textContent = 'Details';
+      detailsBtn.addEventListener('click', e => {
+        e.stopPropagation();
+        openDetails(show);
+      });
+      controls.appendChild(detailsBtn);
 
-        card.appendChild(titleDiv);
-        card.appendChild(metaDiv);
-        card.appendChild(controls);
+      card.appendChild(titleDiv);
+      card.appendChild(metaDiv);
+      card.appendChild(controls);
 
-        // Mobil: Klick auf Karte fügt zum Plan hinzu
-        card.addEventListener('click', () => {
-          toggleShow(show);
-        });
-
-        slotDiv.appendChild(card);
+      card.addEventListener('click', () => {
+        toggleShow(show);
       });
 
-      col.appendChild(slotDiv);
-      row.appendChild(col);
+      showsWrap.appendChild(card);
     });
 
-    grid.appendChild(row);
+    block.appendChild(showsWrap);
+    container.appendChild(block);
   });
 }
 
@@ -243,7 +223,6 @@ function printPlan() {
   window.print();
 }
 
-// Detail-Modal
 function openDetails(show) {
   const modal = document.getElementById('detail-modal');
   modal.classList.add('open');
@@ -294,7 +273,6 @@ function setupModal() {
   });
 }
 
-// iCal-Export
 function toICSDateTime(show) {
   const dayMap = { Do: '20260903', Fr: '20260904', Sa: '20260905', So: '20260906' };
   const dateStr = dayMap[show.day] || '20260903';
@@ -304,7 +282,7 @@ function toICSDateTime(show) {
 }
 
 function icsEscape(text) {
-  return (text || '').replace(/,/g, '\,').replace(/;/g, '\;');
+  return (text || '').replace(/,/g, '\\,').replace(/;/g, '\\;');
 }
 
 function parseDurationMinutes(show) {
@@ -354,7 +332,7 @@ function createICS(showsInPlan) {
   });
 
   lines.push('END:VCALENDAR');
-  return lines.join('');
+  return lines.join('\r\n');
 }
 
 function downloadICS() {

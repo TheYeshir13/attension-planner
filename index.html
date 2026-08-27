@@ -11,29 +11,26 @@
     <div class="app-header-inner">
       <div>
         <h1>at.tension Show Planner</h1>
-        <p>Plane dein Festival – Shows im Kalender auswählen und deinen persönlichen Plan exportieren.</p>
+        <p>Plane dein Festival – wähle Shows aus und exportiere deinen persönlichen Plan.</p>
       </div>
       <div class="app-filters">
-        <label>
-          Tag:
-          <select id="day-filter"></select>
-        </label>
         <label>
           Typ:
           <select id="type-filter"></select>
         </label>
       </div>
     </div>
+    <nav class="day-tabs" id="day-tabs" aria-label="Festivaltage"></nav>
   </header>
 
   <main class="app-main">
-    <section id="calendar" aria-label="Show-Kalender">
-      <div id="calendar-grid" class="calendar-grid"></div>
+    <section id="calendar" aria-label="Shows des ausgewählten Tages">
+      <div id="calendar-list" class="calendar-list"></div>
     </section>
 
     <section id="plan" aria-label="Mein Plan">
       <h2>Mein Plan</h2>
-      <p class="plan-hint">Tippe auf den Titel (mobil) oder setze das Häkchen (Desktop), um eine Show zum Plan hinzuzufügen.</p>
+      <p class="plan-hint">Tippe auf eine Show, um sie deinem Plan hinzuzufügen oder wieder zu entfernen.</p>
       <ul id="plan-list"></ul>
       <div class="actions">
         <button id="btn-print">Als PDF (Drucken)</button>
@@ -46,7 +43,6 @@
     <small>© 2026 theYeshir · at.tension Show Planner</small>
   </footer>
 
-  <!-- Detail-Modal -->
   <div id="detail-modal" class="modal" aria-hidden="true">
     <div class="modal-overlay" data-close-modal></div>
     <div class="modal-content">
