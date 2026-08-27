@@ -10,6 +10,7 @@ async function loadData() {
     }
     shows = await res.json();
     initDayFilter();
+    initTypeFilter();
     renderCalendar();
     renderPlan();
   } catch (err) {
@@ -30,6 +31,10 @@ function getDays() {
 function getTimes() {
   const times = Array.from(new Set(shows.map(s => s.time))).filter(Boolean);
   return times.sort();
+}
+
+function getTypes() {
+  return Array.from(new Set(shows.map(s => s.type))).filter(Boolean).sort();
 }
 
 function initDayFilter() {
@@ -54,80 +59,127 @@ function initDayFilter() {
   });
 }
 
+function initTypeFilter() {
+  const select = document.getElementById('type-filter');
+  const types = getTypes();
+  select.innerHTML = '';
+
+  const optAll = document.createElement('option');
+  optAll.value = '';
+  optAll.textContent = 'Alle Typen';
+  select.appendChild(optAll);
+
+  types.forEach(t => {
+    const opt = document.createElement('option');
+    opt.value = t;
+    opt.textContent = t;
+    select.appendChild(opt);
+  });
+
+  select.addEventListener('change', () => {
+    renderCalendar();
+  });
+}
+
 function currentDayFilter() {
   const select = document.getElementById('day-filter');
   return select.value || null;
 }
 
-function renderCalendar() {
-  const container = document.getElementById('calendar-grid');
-  container.innerHTML = '';
+function currentTypeFilter() {
+  const select = document.getElementById('type-filter');
+  return select.value || null;
+}
 
-  const dayFilter = currentDayFilter();
+function renderCalendar() {
+  const grid = document.getElementById('calendar-grid');
+  grid.innerHTML = '';
+
   const days = getDays();
   const times = getTimes();
+  const dayFilter = currentDayFilter();
+  const typeFilter = currentTypeFilter();
 
   times.forEach(time => {
-    const rowDiv = document.createElement('div');
-    rowDiv.className = 'time-row';
+    const row = document.createElement('div');
+    row.className = 'calendar-row';
 
-    const labelDiv = document.createElement('div');
-    labelDiv.className = 'time-label';
-    labelDiv.textContent = time;
-    rowDiv.appendChild(labelDiv);
+    const timeCell = document.createElement('div');
+    timeCell.className = 'calendar-time-cell';
+    timeCell.textContent = time;
+    row.appendChild(timeCell);
 
-    const slotDiv = document.createElement('div');
-    slotDiv.className = 'slot-list';
+    const dayRow = document.createElement('div');
+    dayRow.className = 'calendar-day-row';
 
     const daysToShow = dayFilter ? days.filter(d => d === dayFilter) : days;
     daysToShow.forEach(day => {
-      const slotShows = shows.filter(s => s.day === day && s.time === time);
-      slotShows.forEach(show => {
-        const item = document.createElement('div');
-        item.className = 'show-item';
+      const col = document.createElement('div');
+      col.className = 'calendar-slot-col';
+      const slotDiv = document.createElement('div');
+      slotDiv.className = 'calendar-slot';
 
+      const slotShows = shows.filter(s => s.day === day && s.time === time && (!typeFilter || s.type === typeFilter));
+      slotShows.forEach(show => {
+        const card = document.createElement('div');
+        const typeClass = show.type ? 'show-type-' + show.type.replace(/\//g, '\/') : '';
+        card.className = 'show-card mobile-clickable ' + typeClass;
+
+        const titleDiv = document.createElement('div');
+        titleDiv.className = 'show-card-title';
+        titleDiv.textContent = show.title;
+
+        const metaDiv = document.createElement('div');
+        metaDiv.className = 'show-card-meta';
+        const metaParts = [];
+        if (show.stage) metaParts.push(show.stage);
+        if (show.type) metaParts.push(show.type);
+        if (show.language) metaParts.push(show.language);
+        metaDiv.textContent = metaParts.join(' · ');
+
+        const controls = document.createElement('div');
+        controls.className = 'show-card-controls';
+        const left = document.createElement('div');
         const cb = document.createElement('input');
         cb.type = 'checkbox';
         cb.checked = selection.has(showKey(show));
-        cb.addEventListener('change', () => toggleShow(show));
+        cb.addEventListener('change', e => {
+          e.stopPropagation();
+          toggleShow(show);
+        });
+        left.appendChild(cb);
 
-        const main = document.createElement('div');
-        main.className = 'show-main';
-
-        const titleDiv = document.createElement('div');
-        titleDiv.className = 'show-title';
-        titleDiv.textContent = `${day} ${time} · ${show.title}`;
-
-        const metaDiv = document.createElement('div');
-        metaDiv.className = 'show-meta';
-        const parts = [];
-        if (show.type) parts.push(show.type);
-        if (show.stage) parts.push(show.stage);
-        if (show.language) parts.push(show.language);
-        metaDiv.textContent = parts.join(' · ');
-
-        main.appendChild(titleDiv);
-        if (parts.length) main.appendChild(metaDiv);
-
-        const actions = document.createElement('div');
-        actions.className = 'show-actions';
+        const right = document.createElement('div');
         const detailsBtn = document.createElement('button');
         detailsBtn.type = 'button';
         detailsBtn.textContent = 'Details';
-        detailsBtn.addEventListener('click', () => openDetails(show));
-        actions.appendChild(detailsBtn);
+        detailsBtn.addEventListener('click', e => {
+          e.stopPropagation();
+          openDetails(show);
+        });
+        right.appendChild(detailsBtn);
 
-        item.appendChild(cb);
-        item.appendChild(main);
-        item.appendChild(actions);
-        slotDiv.appendChild(item);
+        controls.appendChild(left);
+        controls.appendChild(right);
+
+        card.appendChild(titleDiv);
+        card.appendChild(metaDiv);
+        card.appendChild(controls);
+
+        // Mobil: Klick auf Titel oder Karte fügt zum Plan hinzu
+        card.addEventListener('click', () => {
+          toggleShow(show);
+        });
+
+        slotDiv.appendChild(card);
       });
+
+      col.appendChild(slotDiv);
+      dayRow.appendChild(col);
     });
 
-    if (slotDiv.children.length > 0) {
-      rowDiv.appendChild(slotDiv);
-      container.appendChild(rowDiv);
-    }
+    row.appendChild(dayRow);
+    grid.appendChild(row);
   });
 }
 
@@ -176,8 +228,7 @@ function printPlan() {
   window.print();
 }
 
-/* Detail-Modal */
-
+// Detail-Modal
 function openDetails(show) {
   const modal = document.getElementById('detail-modal');
   modal.classList.add('open');
@@ -228,10 +279,8 @@ function setupModal() {
   });
 }
 
-/* iCal-Export */
-
+// iCal-Export
 function toICSDateTime(show) {
-  // Festival 03.09.2026 (Do) bis 06.09.2026 (So)
   const dayMap = { Do: '20260903', Fr: '20260904', Sa: '20260905', So: '20260906' };
   const dateStr = dayMap[show.day] || '20260903';
   const time = (show.time || '00:00').replace(':', '');
@@ -240,14 +289,14 @@ function toICSDateTime(show) {
 }
 
 function icsEscape(text) {
-  return (text || '').replace(/,/g, '\\,').replace(/;/g, '\\;');
+  return (text || '').replace(/,/g, '\,').replace(/;/g, '\;');
 }
 
 function parseDurationMinutes(show) {
   const d = show.duration;
   if (!d || typeof d !== 'string') return 60;
-  const match = d.match(/(\\d+)/);
-  return match ? parseInt(match[1], 10) : 60;
+  const match = d.match(/[0-9]+/);
+  return match ? parseInt(match[0], 10) : 60;
 }
 
 function addMinutesToICS(dt, minutes) {
@@ -290,7 +339,8 @@ function createICS(showsInPlan) {
   });
 
   lines.push('END:VCALENDAR');
-  return lines.join('\r\n');
+  return lines.join('
+');
 }
 
 function downloadICS() {
