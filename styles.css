@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  color: #222;
+}
+header {
+  background: #1f3864;
+  color: #fff;
+  padding: 0.75rem 1rem;
+}
+header h1 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+header p {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0.75rem;
+}
+#calendar, #plan {
+  background: #fff;
+  padding: 0.75rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+}
+#calendar h2, #plan h2 {
+  margin-top: 0;
+  font-size: 1.05rem;
+}
+.calendar-controls {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
+.calendar-controls select {
+  padding: 0.25rem 0.5rem;
+}
+#calendar-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.time-row {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.35rem;
+}
+.time-label {
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin-bottom: 0.2rem;
+}
+.slot-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.show-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+  padding: 0.25rem 0.35rem;
+  border-radius: 6px;
+  background: #fafafa;
+}
+.show-item input[type="checkbox"] {
+  margin-top: 0.1rem;
+}
+.show-title {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.show-meta {
+  font-size: 0.75rem;
+  color: #555;
+}
+#plan-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+#plan-list li {
+  border-bottom: 1px solid #eee;
+  padding: 0.35rem 0;
+  font-size: 0.9rem;
+}
+#plan-list li:last-child {
+  border-bottom: none;
+}
+.actions {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+button {
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  border: none;
+  background: #1f3864;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+button:hover {
+  background: #2b4f8a;
+}
+footer {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.7rem;
+  color: #666;
+}
+
+/* Typ-Farben als Klassen (Beispiele, kannst du anpassen) */
+.show-type-Vouchershow { background-color: #fff4cc; }
+.show-type-Theater\/Tanz\/Zirkus { background-color: #e2efda; }
+.show-type-Kinderprogramm { background-color: #d9e1f2; }
+.show-type-Sideshows\/Walkacts\/Installationen { background-color: #fce4d6; }
+.show-type-Kino\/Workshops\/Lesungen { background-color: #f2f2f2; }
+
+/* Größere Screens: zwei Spalten (Kalender + Plan nebeneinander) */
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  #calendar {
+    flex: 2 1 60%;
+  }
+  #plan {
+    flex: 1 1 36%;
+  }
+}
+
+/* Print: nur der Plan */
+@media print {
+  header, #calendar, footer { display: none; }
+  body { background: #fff; }
+  main { padding: 0; }
+  #plan {
+    box-shadow: none;
+    border-radius: 0;
+    width: 100%;
+  }
+}

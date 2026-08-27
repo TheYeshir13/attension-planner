@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>at.tension Planner</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>at.tension Show Planner</h1>
+    <p>Wähle deine Shows und exportiere deinen persönlichen Plan.</p>
+  </header>
+
+  <main>
+    <section id="calendar">
+      <h2>Kalender</h2>
+      <div class="calendar-controls">
+        <label>
+          Tag:
+          <select id="day-filter"></select>
+        </label>
+      </div>
+      <div id="calendar-grid"></div>
+    </section>
+
+    <section id="plan">
+      <h2>Mein Plan</h2>
+      <ul id="plan-list"></ul>
+      <div class="actions">
+        <button id="btn-print">Als PDF (Drucken)</button>
+        <button id="btn-ical">Als iCal (.ics)</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Plantrio · at.tension #11 Planner</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
