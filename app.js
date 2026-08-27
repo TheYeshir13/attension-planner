@@ -36,16 +36,19 @@ function initDayFilter() {
   const select = document.getElementById('day-filter');
   const days = getDays();
   select.innerHTML = '';
+
   const optAll = document.createElement('option');
   optAll.value = '';
   optAll.textContent = 'Alle Tage';
   select.appendChild(optAll);
+
   days.forEach(d => {
     const opt = document.createElement('option');
     opt.value = d;
     opt.textContent = d;
     select.appendChild(opt);
   });
+
   select.addEventListener('change', () => {
     renderCalendar();
   });
@@ -79,27 +82,30 @@ function renderCalendar() {
     const daysToShow = dayFilter ? days.filter(d => d === dayFilter) : days;
     daysToShow.forEach(day => {
       const slotShows = shows.filter(s => s.day === day && s.time === time);
-      slotShows.forEach(s => {
+      slotShows.forEach(show => {
         const item = document.createElement('div');
         item.className = 'show-item';
 
         const cb = document.createElement('input');
         cb.type = 'checkbox';
-        cb.checked = selection.has(showKey(s));
-        cb.addEventListener('change', () => toggleShow(s));
+        cb.checked = selection.has(showKey(show));
+        cb.addEventListener('change', () => toggleShow(show));
 
         const main = document.createElement('div');
         main.className = 'show-main';
+
         const titleDiv = document.createElement('div');
         titleDiv.className = 'show-title';
-        titleDiv.textContent = `${day} ${time} · ${s.title}`;
+        titleDiv.textContent = `${day} ${time} · ${show.title}`;
+
         const metaDiv = document.createElement('div');
         metaDiv.className = 'show-meta';
         const parts = [];
-        if (s.type) parts.push(s.type);
-        if (s.stage) parts.push(s.stage);
-        if (s.language) parts.push(s.language);
+        if (show.type) parts.push(show.type);
+        if (show.stage) parts.push(show.stage);
+        if (show.language) parts.push(show.language);
         metaDiv.textContent = parts.join(' · ');
+
         main.appendChild(titleDiv);
         if (parts.length) main.appendChild(metaDiv);
 
@@ -108,7 +114,7 @@ function renderCalendar() {
         const detailsBtn = document.createElement('button');
         detailsBtn.type = 'button';
         detailsBtn.textContent = 'Details';
-        detailsBtn.addEventListener('click', () => openDetails(s));
+        detailsBtn.addEventListener('click', () => openDetails(show));
         actions.appendChild(detailsBtn);
 
         item.appendChild(cb);
@@ -139,17 +145,20 @@ function toggleShow(show) {
 
 function getSelectedShows() {
   const keys = Array.from(selection);
-  return keys.map(k => {
-    const [day, time, title] = k.split('|');
-    return shows.find(s => s.day === day && s.time === time && s.title === title);
-  }).filter(Boolean).sort((a, b) => {
-    const order = ['Do', 'Fr', 'Sa', 'So'];
-    const da = order.indexOf(a.day);
-    const db = order.indexOf(b.day);
-    if (da !== db) return da - db;
-    if (a.time === b.time) return a.title.localeCompare(b.title);
-    return a.time.localeCompare(b.time);
-  });
+  return keys
+    .map(k => {
+      const [day, time, title] = k.split('|');
+      return shows.find(s => s.day === day && s.time === time && s.title === title);
+    })
+    .filter(Boolean)
+    .sort((a, b) => {
+      const order = ['Do', 'Fr', 'Sa', 'So'];
+      const da = order.indexOf(a.day);
+      const db = order.indexOf(b.day);
+      if (da !== db) return da - db;
+      if (a.time === b.time) return a.title.localeCompare(b.title);
+      return a.time.localeCompare(b.time);
+    });
 }
 
 function renderPlan() {
@@ -166,6 +175,8 @@ function renderPlan() {
 function printPlan() {
   window.print();
 }
+
+/* Detail-Modal */
 
 function openDetails(show) {
   const modal = document.getElementById('detail-modal');
@@ -217,8 +228,11 @@ function setupModal() {
   });
 }
 
+/* iCal-Export */
+
 function toICSDateTime(show) {
-  const dayMap = { 'Do': '20260903', 'Fr': '20260904', 'Sa': '20260905', 'So': '20260906' };
+  // Festival 03.09.2026 (Do) bis 06.09.2026 (So)
+  const dayMap = { Do: '20260903', Fr: '20260904', Sa: '20260905', So: '20260906' };
   const dateStr = dayMap[show.day] || '20260903';
   const time = (show.time || '00:00').replace(':', '');
   const timeHM = time + '00';
@@ -226,31 +240,31 @@ function toICSDateTime(show) {
 }
 
 function icsEscape(text) {
-  return (text || '').replace(/,/g, '\,').replace(/;/g, '\;');
+  return (text || '').replace(/,/g, '\\,').replace(/;/g, '\\;');
 }
 
 function parseDurationMinutes(show) {
   const d = show.duration;
   if (!d || typeof d !== 'string') return 60;
-  const m = d.match(/(\d+)/);
-  return m ? parseInt(m[1], 10) : 60;
+  const match = d.match(/(\\d+)/);
+  return match ? parseInt(match[1], 10) : 60;
 }
 
 function addMinutesToICS(dt, minutes) {
-  const year = parseInt(dt.slice(0,4),10);
-  const month = parseInt(dt.slice(4,6),10);
-  const day = parseInt(dt.slice(6,8),10);
-  const hour = parseInt(dt.slice(9,11),10);
-  const min = parseInt(dt.slice(11,13),10);
-  const sec = parseInt(dt.slice(13,15),10);
-  const dateObj = new Date(Date.UTC(year, month-1, day, hour, min, sec));
+  const year = parseInt(dt.slice(0, 4), 10);
+  const month = parseInt(dt.slice(4, 6), 10);
+  const day = parseInt(dt.slice(6, 8), 10);
+  const hour = parseInt(dt.slice(9, 11), 10);
+  const min = parseInt(dt.slice(11, 13), 10);
+  const sec = parseInt(dt.slice(13, 15), 10);
+  const dateObj = new Date(Date.UTC(year, month - 1, day, hour, min, sec));
   dateObj.setUTCMinutes(dateObj.getUTCMinutes() + minutes);
   const y = dateObj.getUTCFullYear();
-  const m2 = String(dateObj.getUTCMonth()+1).padStart(2,'0');
-  const d2 = String(dateObj.getUTCDate()).padStart(2,'0');
-  const h2 = String(dateObj.getUTCHours()).padStart(2,'0');
-  const mi2 = String(dateObj.getUTCMinutes()).padStart(2,'0');
-  const s2 = String(dateObj.getUTCSeconds()).padStart(2,'0');
+  const m2 = String(dateObj.getUTCMonth() + 1).padStart(2, '0');
+  const d2 = String(dateObj.getUTCDate()).padStart(2, '0');
+  const h2 = String(dateObj.getUTCHours()).padStart(2, '0');
+  const mi2 = String(dateObj.getUTCMinutes()).padStart(2, '0');
+  const s2 = String(dateObj.getUTCSeconds()).padStart(2, '0');
   return `${y}${m2}${d2}T${h2}${mi2}${s2}`;
 }
 
@@ -276,7 +290,7 @@ function createICS(showsInPlan) {
   });
 
   lines.push('END:VCALENDAR');
-  return lines.join('');
+  return lines.join('\r\n');
 }
 
 function downloadICS() {
