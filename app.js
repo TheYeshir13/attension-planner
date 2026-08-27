@@ -2,6 +2,18 @@ let shows = [];
 let selection = new Set();
 let activeDay = null;
 
+function normalizeTime(t) {
+  if (!t) return '';
+  let s = String(t).trim();
+  const match = s.match(/^(\d{1,2}):(\d{2})/);
+  if (match) {
+    const hh = match[1].padStart(2, '0');
+    const mm = match[2];
+    return `${hh}:${mm}`;
+  }
+  return s;
+}
+
 async function loadData() {
   try {
     const res = await fetch('data.json');
@@ -9,7 +21,8 @@ async function loadData() {
       console.error('Fehler beim Laden von data.json:', res.status, res.statusText);
       return;
     }
-    shows = await res.json();
+    const raw = await res.json();
+    shows = raw.map(s => ({ ...s, time: normalizeTime(s.time) }));
     initDayTabs();
     initTypeFilter();
     renderCalendar();
@@ -122,7 +135,7 @@ function renderCalendar() {
 
     const header = document.createElement('div');
     header.className = 'time-block-header';
-    header.textContent = time;
+    header.textContent = `${time} (${showsAtTime.length} Show${showsAtTime.length > 1 ? 's' : ''})`;
     block.appendChild(header);
 
     const showsWrap = document.createElement('div');
