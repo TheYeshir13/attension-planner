@@ -480,6 +480,21 @@
     "time": "18:00"
   },
   {
+    "title": "Die Technomaschine",
+    "type": "Musik",
+    "genre": "Konzert",
+    "organizer": null,
+    "duration": null,
+    "minAge": null,
+    "language": null,
+    "stage": "F| Lighthouse",
+    "shortDescription": "Die Technomaschine ist eine intuitive, kollaboratives Instrument, ständig zugänglich und spielbar für jeden und jede im Eingang des Kutters. In diesem Slot wird sie einmal an die Anlage gesteckt und laut aufgedreht.",
+    "fullDescription": "Die Technomaschine ist eine intuitive, kollaboratives Instrument, ständig zugänglich und spielbar für jeden und jede im Eingang des Kutters. In diesem Slot wird sie einmal an die Anlage gesteckt und laut aufgedreht.",
+    "programUrl": "https://attension-festival.de/programm#program_18377",
+    "day": "Do",
+    "time": "18:00"
+  },
+  {
     "title": "Live Siebdruck",
     "type": "Sideshows/Walkacts/Installationen",
     "genre": "Siebdruck",
@@ -1785,7 +1800,7 @@
     "time": "13:00"
   },
   {
-    "title": "Screeni Moreeni",
+    "title": "Screeni Moreeni & KaTink",
     "type": "Musik",
     "genre": "DJ",
     "organizer": null,
@@ -2820,7 +2835,7 @@
     "time": "18:00"
   },
   {
-    "title": "Wurstical",
+    "title": "Sag mal weinst du, oder ist das der Grillrauch? - Ein Wurstical in 3 Garzuständen",
     "type": "Sideshows/Walkacts/Installationen",
     "genre": "Theater / Performance",
     "organizer": null,
@@ -3559,7 +3574,7 @@
     "type": "Theater/Tanz/Zirkus",
     "genre": "Zeitgenössischer Zirkus",
     "organizer": null,
-    "duration": "40 Min. + 30 Min.",
+    "duration": "40 Min. + 20 Min.",
     "minAge": "18+",
     "language": "englisch",
     "stage": "17 | Tanzwüste",
@@ -3772,25 +3787,10 @@
     "duration": null,
     "minAge": null,
     "language": null,
-    "stage": "F | Karla Kutter",
+    "stage": "F| Lighthouse",
     "shortDescription": "Die Technomaschine ist eine intuitive, kollaboratives Instrument, ständig zugänglich und spielbar für jeden und jede im Eingang des Kutters. In diesem Slot wird sie einmal an die Anlage gesteckt und laut aufgedreht.",
     "fullDescription": "Die Technomaschine ist eine intuitive, kollaboratives Instrument, ständig zugänglich und spielbar für jeden und jede im Eingang des Kutters. In diesem Slot wird sie einmal an die Anlage gesteckt und laut aufgedreht.",
     "programUrl": "https://attension-festival.de/programm#program_18377",
-    "day": "Sa",
-    "time": "00:00"
-  },
-  {
-    "title": "PILOCKA KRACH",
-    "type": "Musik",
-    "genre": "Konzert / Performance",
-    "organizer": null,
-    "duration": null,
-    "minAge": null,
-    "language": null,
-    "stage": "Z | Cabaret",
-    "shortDescription": "Pilocka Krach verbindet Elektronik, Pop und Theater zu einem einzigartigen Bühnenerlebnis. Mit „FAUST III“ wird das Album live zur lebendigen Gestalt: verspielt, eigenwillig und voller überraschender Wendungen.",
-    "fullDescription": "Pilocka Krach verbindet Elektronik, Pop und Theater zu einem einzigartigen Bühnenerlebnis. Mit „FAUST III“ wird das Album live zur lebendigen Gestalt: verspielt, eigenwillig und voller überraschender Wendungen.",
-    "programUrl": "https://attension-festival.de/programm#program_18376",
     "day": "Sa",
     "time": "00:00"
   },
@@ -5625,6 +5625,21 @@
     "time": "18:00"
   },
   {
+    "title": "Sag mal weinst du, oder ist das der Grillrauch? - Ein Wurstical in 3 Garzuständen",
+    "type": "Sideshows/Walkacts/Installationen",
+    "genre": "Theater / Performance",
+    "organizer": null,
+    "duration": "40 Min.",
+    "minAge": null,
+    "language": "deutsch",
+    "stage": "10 | Hinter dem Salon",
+    "shortDescription": "Ein groteskes Live-Hörspiel mit bösen Liedern über Identität, Glauben und die Absurdität des menschlichen Umgangs mit Essen – anders gesagt: 1A extrawurstig geil! Im Kühlschrank einer deutschen Imbissbude leben Würstchen, Steaks und Burger-Patties in seliger Ignoranz: Sie waren nie Tiere, immer schon Fleisch. Als ein kleines Nürnberger Würstchen die schreckliche Wahrheit entdeckt, spaltet sich der Kühlschrank in zwei Lager. Und plötzlich taucht ein Burger aus Erbsenprotein auf…",
+    "fullDescription": "Ein groteskes Live-Hörspiel mit bösen Liedern über Identität, Glauben und die Absurdität des menschlichen Umgangs mit Essen – anders gesagt: 1A extrawurstig geil! Im Kühlschrank einer deutschen Imbissbude leben Würstchen, Steaks und Burger-Patties in seliger Ignoranz: Sie waren nie Tiere, immer schon Fleisch. Als ein kleines Nürnberger Würstchen die schreckliche Wahrheit entdeckt, spaltet sich der Kühlschrank in zwei Lager. Und plötzlich taucht ein Burger aus Erbsenprotein auf…",
+    "programUrl": "https://attension-festival.de/programm#program_18435",
+    "day": "Sa",
+    "time": "18:00"
+  },
+  {
     "title": "The Losers Arcade",
     "type": "Sideshows/Walkacts/Installationen",
     "genre": "Interaktive Spielhalle",
@@ -5651,21 +5666,6 @@
     "shortDescription": "Wohin bringen die großen Müllautos eigentlich unseren Abfall? Die Antwort ist streng geheim und darf nicht weitergesagt werden. Denn WOANDERS erwachen die Müllwesen zum Leben! Ein riesiger Putzschwamm, jede Menge magischer Schleim und ein neugieriger Staubsauger treiben dort ihr Unwesen. Das O-Team gibt einen exklusiven Einblick in diese verborgene Welt, ohne Sprache, aber mit farbenfrohem Objekttheater irgendwo zwischen DIY-Recycling und Anarchismus.",
     "fullDescription": "Wohin bringen die großen Müllautos eigentlich unseren Abfall? Die Antwort ist streng geheim und darf nicht weitergesagt werden. Denn WOANDERS erwachen die Müllwesen zum Leben! Ein riesiger Putzschwamm, jede Menge magischer Schleim und ein neugieriger Staubsauger treiben dort ihr Unwesen. Das O-Team gibt einen exklusiven Einblick in diese verborgene Welt, ohne Sprache, aber mit farbenfrohem Objekttheater irgendwo zwischen DIY-Recycling und Anarchismus.",
     "programUrl": "https://attension-festival.de/programm#program_16752",
-    "day": "Sa",
-    "time": "18:00"
-  },
-  {
-    "title": "Wurstical",
-    "type": "Sideshows/Walkacts/Installationen",
-    "genre": "Theater / Performance",
-    "organizer": null,
-    "duration": "40 Min.",
-    "minAge": null,
-    "language": "deutsch",
-    "stage": "10 | Hinter dem Salon",
-    "shortDescription": "Ein groteskes Live-Hörspiel mit bösen Liedern über Identität, Glauben und die Absurdität des menschlichen Umgangs mit Essen – anders gesagt: 1A extrawurstig geil! Im Kühlschrank einer deutschen Imbissbude leben Würstchen, Steaks und Burger-Patties in seliger Ignoranz: Sie waren nie Tiere, immer schon Fleisch. Als ein kleines Nürnberger Würstchen die schreckliche Wahrheit entdeckt, spaltet sich der Kühlschrank in zwei Lager. Und plötzlich taucht ein Burger aus Erbsenprotein auf…",
-    "fullDescription": "Ein groteskes Live-Hörspiel mit bösen Liedern über Identität, Glauben und die Absurdität des menschlichen Umgangs mit Essen – anders gesagt: 1A extrawurstig geil! Im Kühlschrank einer deutschen Imbissbude leben Würstchen, Steaks und Burger-Patties in seliger Ignoranz: Sie waren nie Tiere, immer schon Fleisch. Als ein kleines Nürnberger Würstchen die schreckliche Wahrheit entdeckt, spaltet sich der Kühlschrank in zwei Lager. Und plötzlich taucht ein Burger aus Erbsenprotein auf…",
-    "programUrl": "https://attension-festival.de/programm#program_18435",
     "day": "Sa",
     "time": "18:00"
   },
@@ -6484,7 +6484,7 @@
     "type": "Theater/Tanz/Zirkus",
     "genre": "Zeitgenössischer Zirkus",
     "organizer": null,
-    "duration": "40 Min. + 30 Min.",
+    "duration": "40 Min. + 20 Min.",
     "minAge": "18+",
     "language": "englisch",
     "stage": "17 | Tanzwüste",
@@ -8944,7 +8944,7 @@
     "type": "Theater/Tanz/Zirkus",
     "genre": "Zeitgenössischer Zirkus",
     "organizer": null,
-    "duration": "40 Min. + 30 Min.",
+    "duration": "40 Min. + 20 Min.",
     "minAge": "18+",
     "language": "englisch",
     "stage": "17 | Tanzwüste",
