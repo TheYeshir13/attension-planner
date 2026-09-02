@@ -150,6 +150,21 @@
     "time": "15:00"
   },
   {
+    "title": "eternal algues",
+    "type": "Sideshows/Walkacts/Installationen",
+    "genre": "Performance",
+    "organizer": null,
+    "duration": "12 min",
+    "minAge": null,
+    "language": null,
+    "stage": "F| Lighthouse",
+    "shortDescription": "Da ist eine Geschichte. Sie fließt durch den Raum. Driftet aus einer anderen Welt hinein. Kriecht um deine Füße, verwebt sich mit den Wänden, steigt auf und… ist weg. Aber keine Panik. Ihr werdet sie wieder finden. Der Leuchtturm zeigt euch den weg. Ein interaktiver Hörspielraum. Zwischen Wissenschaft und Fantasie. Eine kleine Geschichte über die Entstehung des Lebens wie Ihr sie so noch nie gehört habt.",
+    "fullDescription": "Da ist eine Geschichte. Sie fließt durch den Raum. Driftet aus einer anderen Welt hinein. Kriecht um deine Füße, verwebt sich mit den Wänden, steigt auf und… ist weg. Aber keine Panik. Ihr werdet sie wieder finden. Der Leuchtturm zeigt euch den weg. Ein interaktiver Hörspielraum. Zwischen Wissenschaft und Fantasie. Eine kleine Geschichte über die Entstehung des Lebens wie Ihr sie so noch nie gehört habt.",
+    "programUrl": "https://attension-festival.de/programm#program_18389",
+    "day": "Do",
+    "time": "15:00"
+  },
+  {
     "title": "Fantasiewerkstatt",
     "type": "Kinderprogramm",
     "genre": "Kunst zum Mitmachen",
@@ -893,8 +908,8 @@
     "minAge": null,
     "language": null,
     "stage": "N | Räuber:innenhöhle",
-    "shortDescription": null,
-    "fullDescription": null,
+    "shortDescription": "Das Büro ist tot - es lebe das Bureau! Die Verwaltung ist eine vielköpfige Berliner Brass-Punk-Combo - Mit krächzenden Fanfaren, flirrendem Bass, treibenden Drums und Sax-sation bearbeiten wir verstaubte Anarcho-Punk und Doom-Mood Akten. Und weil das D in Verwaltung für Digital steht, gibts nen Synthie noch obendrauf. Der Bierfinger darf wackeln und das Tanzbein zucken.",
+    "fullDescription": "Das Büro ist tot - es lebe das Bureau! Die Verwaltung ist eine vielköpfige Berliner Brass-Punk-Combo - Mit krächzenden Fanfaren, flirrendem Bass, treibenden Drums und Sax-sation bearbeiten wir verstaubte Anarcho-Punk und Doom-Mood Akten. Und weil das D in Verwaltung für Digital steht, gibts nen Synthie noch obendrauf. Der Bierfinger darf wackeln und das Tanzbein zucken.",
     "programUrl": "https://attension-festival.de/programm#program_18444",
     "day": "Do",
     "time": "19:00"
@@ -1995,6 +2010,21 @@
     "time": "11:00"
   },
   {
+    "title": "Zine making Workshop",
+    "type": "Kino/Workshops/Lesungen",
+    "genre": "Workshop",
+    "organizer": null,
+    "duration": "120 Min.",
+    "minAge": null,
+    "language": null,
+    "stage": "A | Workshophangar",
+    "shortDescription": "In diesem Workshop erforschen wir gemeinsam die Grundlagen des Zine-Makings. Ein Zine ist ein Minibuch bzw. ein kleines Magazin, das durch Falten und Schneiden eines A4 Papiers erstellt werden kann. Diese können leicht kopiert, damit vervielfältigt und schnell weiterverteilt werden. Vor allem aber geben Zines Anregungen, wie Zusammenhänge auf eine ganz neue Weise, etwa als Comic oder Collage in kleinen Formaten dargestellt und verbreitet werden können. Die Teilnehmenden bekommen die Gelegenheit, ihr erstes eigenes Zine zu gestalten und so ihre Geschichten und Ideen zu teilen.",
+    "fullDescription": "In diesem Workshop erforschen wir gemeinsam die Grundlagen des Zine-Makings. Ein Zine ist ein Minibuch bzw. ein kleines Magazin, das durch Falten und Schneiden eines A4 Papiers erstellt werden kann. Diese können leicht kopiert, damit vervielfältigt und schnell weiterverteilt werden. Vor allem aber geben Zines Anregungen, wie Zusammenhänge auf eine ganz neue Weise, etwa als Comic oder Collage in kleinen Formaten dargestellt und verbreitet werden können. Die Teilnehmenden bekommen die Gelegenheit, ihr erstes eigenes Zine zu gestalten und so ihre Geschichten und Ideen zu teilen.",
+    "programUrl": "https://attension-festival.de/programm#program_18503",
+    "day": "Fr",
+    "time": "11:00"
+  },
+  {
     "title": "Die Schatzsuche im Blaumeisental",
     "type": "Kinderprogramm",
     "genre": "Kino",
@@ -2070,21 +2100,6 @@
     "time": "12:00"
   },
   {
-    "title": "Löten verbindet: LED Festivalschmuck / Soldering connects: LED jewlery",
-    "type": "Kino/Workshops/Lesungen",
-    "genre": "Workshop",
-    "organizer": null,
-    "duration": "240 Min.",
-    "minAge": null,
-    "language": null,
-    "stage": "Z | Cabaret",
-    "shortDescription": "Wir haben für euch tausende blinkende Lichter, Platinen und alles weitere mitgebracht, damit ihr euch auf der Tanzfläche oder im Zelt wieder findet. Für den Workshop sind keine Vorkenntnisse oder Anmeldungen nötig; wir helfen euch, euren individuellen und blinkenden Festivalschmuck zu basteln. Dauer: Eine halbe Stunde Zeit solltest du einplanen. Start jederzeit möglich, sofern gerade ein Platz frei ist. Länge: 30 Minuten pro person",
-    "fullDescription": "Wir haben für euch tausende blinkende Lichter, Platinen und alles weitere mitgebracht, damit ihr euch auf der Tanzfläche oder im Zelt wieder findet. Für den Workshop sind keine Vorkenntnisse oder Anmeldungen nötig; wir helfen euch, euren individuellen und blinkenden Festivalschmuck zu basteln. Dauer: Eine halbe Stunde Zeit solltest du einplanen. Start jederzeit möglich, sofern gerade ein Platz frei ist. Länge: 30 Minuten pro person",
-    "programUrl": "https://attension-festival.de/programm#program_18525",
-    "day": "Fr",
-    "time": "12:00"
-  },
-  {
     "title": "MOVEMENT & PLAY",
     "type": "Kino/Workshops/Lesungen",
     "genre": "Workshop",
@@ -2093,8 +2108,8 @@
     "minAge": null,
     "language": null,
     "stage": "F | Karla Kutter",
-    "shortDescription": "stretch, impro, spielen und bewegen ab donnerstag um 12 am kutter.",
-    "fullDescription": "stretch, impro, spielen und bewegen ab donnerstag um 12 am kutter.",
+    "shortDescription": "Stretch, Impro, spielen und bewegen ab Donnerstag um 12 am Kutter.",
+    "fullDescription": "Stretch, Impro, spielen und bewegen ab Donnerstag um 12 am Kutter.",
     "programUrl": "https://attension-festival.de/programm#program_18343",
     "day": "Fr",
     "time": "12:00"
@@ -2696,6 +2711,21 @@
     "shortDescription": "Drei Jongleur:innen in bunter Ballonseide werden in eine Art Videospiel hineingesogen. Nun sind sie der Kontrolle des in der Realität verbliebenen Musikers und seiner magischen Beatmaschine ausgeliefert. Mit live produziertem Techno bestimmt er jeden Wurf und jede Bewegung. Die drei ferngesteuerten Körper werden bis zu ihrer vollständigen Erschöpfung zu einer elektrisierenden Jonglage angetrieben. Eine knallige Hommage an die glorreiche Ära des Game Boys.",
     "fullDescription": "Drei Jongleur:innen in bunter Ballonseide werden in eine Art Videospiel hineingesogen. Nun sind sie der Kontrolle des in der Realität verbliebenen Musikers und seiner magischen Beatmaschine ausgeliefert. Mit live produziertem Techno bestimmt er jeden Wurf und jede Bewegung. Die drei ferngesteuerten Körper werden bis zu ihrer vollständigen Erschöpfung zu einer elektrisierenden Jonglage angetrieben. Eine knallige Hommage an die glorreiche Ära des Game Boys.",
     "programUrl": "https://attension-festival.de/programm#program_16568",
+    "day": "Fr",
+    "time": "15:00"
+  },
+  {
+    "title": "eternal algues",
+    "type": "Sideshows/Walkacts/Installationen",
+    "genre": "Performance",
+    "organizer": null,
+    "duration": "12 min",
+    "minAge": null,
+    "language": null,
+    "stage": "F| Lighthouse",
+    "shortDescription": "Da ist eine Geschichte. Sie fließt durch den Raum. Driftet aus einer anderen Welt hinein. Kriecht um deine Füße, verwebt sich mit den Wänden, steigt auf und… ist weg. Aber keine Panik. Ihr werdet sie wieder finden. Der Leuchtturm zeigt euch den weg. Ein interaktiver Hörspielraum. Zwischen Wissenschaft und Fantasie. Eine kleine Geschichte über die Entstehung des Lebens wie Ihr sie so noch nie gehört habt.",
+    "fullDescription": "Da ist eine Geschichte. Sie fließt durch den Raum. Driftet aus einer anderen Welt hinein. Kriecht um deine Füße, verwebt sich mit den Wänden, steigt auf und… ist weg. Aber keine Panik. Ihr werdet sie wieder finden. Der Leuchtturm zeigt euch den weg. Ein interaktiver Hörspielraum. Zwischen Wissenschaft und Fantasie. Eine kleine Geschichte über die Entstehung des Lebens wie Ihr sie so noch nie gehört habt.",
+    "programUrl": "https://attension-festival.de/programm#program_18389",
     "day": "Fr",
     "time": "15:00"
   },
@@ -3698,8 +3728,8 @@
     "minAge": null,
     "language": "deutsch",
     "stage": "C | Casino",
-    "shortDescription": "Cora führt ein ruhiges Leben – bis ihre Kindheitsfreundin Olympia verhaftet wird. Erinnerungen an einen intensiven Sommer werden wach: Verbotene Partys, erste Grenzüberschreitungen und Olympia, die sich einer radikalen Aktivistigruppe anschließt. Beim Versuch, Schritt zu halten, gerät Cora immer tiefer in ein Netz aus Geheimnissen und Lügen. Eine Lesung über Freundschaft, Zugehörigkeit und Mut.",
-    "fullDescription": "Cora führt ein ruhiges Leben – bis ihre Kindheitsfreundin Olympia verhaftet wird. Erinnerungen an einen intensiven Sommer werden wach: Verbotene Partys, erste Grenzüberschreitungen und Olympia, die sich einer radikalen Aktivistigruppe anschließt. Beim Versuch, Schritt zu halten, gerät Cora immer tiefer in ein Netz aus Geheimnissen und Lügen. Eine Lesung über Freundschaft, Zugehörigkeit und Mut.",
+    "shortDescription": "Cora führt ein ruhiges Leben – bis ihre Kindheitsfreundin Olympia verhaftet wird. Erinnerungen an einen intensiven Sommer werden wach: Verbotene Partys, erste Grenzüberschreitungen und Olympia, die sich einer radikalen Aktivistigruppe anschließt. Beim Versuch, Schritt zu halten, gerät Cora immer tiefer in ein Netz aus Geheimnissen und Lügen. Eine Lesung über Freundschaft, Zugehörigkeit und Mut. Orca steht auf der Longlist für den Deutschen Buchpreis 2026 .",
+    "fullDescription": "Cora führt ein ruhiges Leben – bis ihre Kindheitsfreundin Olympia verhaftet wird. Erinnerungen an einen intensiven Sommer werden wach: Verbotene Partys, erste Grenzüberschreitungen und Olympia, die sich einer radikalen Aktivistigruppe anschließt. Beim Versuch, Schritt zu halten, gerät Cora immer tiefer in ein Netz aus Geheimnissen und Lügen. Eine Lesung über Freundschaft, Zugehörigkeit und Mut. Orca steht auf der Longlist für den Deutschen Buchpreis 2026 .",
     "programUrl": "https://attension-festival.de/programm#program_18319",
     "day": "Fr",
     "time": "19:00"
@@ -3733,6 +3763,21 @@
     "programUrl": "https://attension-festival.de/programm#program_18423",
     "day": "Fr",
     "time": "19:00"
+  },
+  {
+    "title": "Pyrotechnische Früherziehung",
+    "type": "Kinderprogramm",
+    "genre": "Workshop",
+    "organizer": null,
+    "duration": "120 Min.",
+    "minAge": "10+",
+    "language": "deutsch",
+    "stage": "36 | Turmbühne",
+    "shortDescription": "Wo beginnt die Reise des Feuers? Und wie malt es Formen und Farben in den Himmel? Zusammen erforschen wir, wie es von der ersten Flamme zum Feuerwerk kam. Wie es funktioniert, warum es so magisch ist, wie sich Gefahr und Faszination begegnen. Risiken und Nebenwirkungen: Nie wieder Angst an Silvester! Für max. 20 junge Menschen zwischen 10 und 14 Jahren. Anmeldung am Infopoint. Der genaue Treffpunkt wird bei der Anmeldung bekannt gegeben.",
+    "fullDescription": "Wo beginnt die Reise des Feuers? Und wie malt es Formen und Farben in den Himmel? Zusammen erforschen wir, wie es von der ersten Flamme zum Feuerwerk kam. Wie es funktioniert, warum es so magisch ist, wie sich Gefahr und Faszination begegnen. Risiken und Nebenwirkungen: Nie wieder Angst an Silvester! Für max. 20 junge Menschen zwischen 10 und 14 Jahren. Anmeldung am Infopoint. Der genaue Treffpunkt wird bei der Anmeldung bekannt gegeben.",
+    "programUrl": "https://attension-festival.de/programm#program_18475",
+    "day": "Fr",
+    "time": "19:15"
   },
   {
     "title": "FLY",
@@ -4613,26 +4658,11 @@
     "minAge": null,
     "language": null,
     "stage": "F | Karla Kutter",
-    "shortDescription": null,
-    "fullDescription": null,
+    "shortDescription": "fernet flex ist ein queerfeministisches dj-duo aus hamburg und spielt sich quer durch breaks, bass, bailefunk und latintrance. ihr sound ist maximal, genrefluid. an allen tracks ist mindestens eine flinta* person kreativ beteiligt.",
+    "fullDescription": "fernet flex ist ein queerfeministisches dj-duo aus hamburg und spielt sich quer durch breaks, bass, bailefunk und latintrance. ihr sound ist maximal, genrefluid. an allen tracks ist mindestens eine flinta* person kreativ beteiligt.",
     "programUrl": "https://attension-festival.de/programm#program_18329",
     "day": "Sa",
     "time": "03:00"
-  },
-  {
-    "title": "Miau Sayonara",
-    "type": "Musik",
-    "genre": "DJ",
-    "organizer": null,
-    "duration": null,
-    "minAge": null,
-    "language": null,
-    "stage": "N | Räuber:innenhöhle",
-    "shortDescription": null,
-    "fullDescription": null,
-    "programUrl": "https://attension-festival.de/programm#program_18299",
-    "day": "Sa",
-    "time": "03:30"
   },
   {
     "title": "Oma teilen",
@@ -5288,8 +5318,8 @@
     "minAge": null,
     "language": null,
     "stage": "Z | Cabaret",
-    "shortDescription": "Wir haben für euch tausende blinkende Lichter, Platinen und alles weitere mitgebracht, damit ihr euch auf der Tanzfläche oder im Zelt wieder findet. Für den Workshop sind keine Vorkenntnisse oder Anmeldungen nötig; wir helfen euch, euren individuellen und blinkenden Festivalschmuck zu basteln. Dauer: Eine halbe Stunde Zeit solltest du einplanen. Start jederzeit möglich, sofern gerade ein Platz frei ist. Länge: 30 Minuten pro person",
-    "fullDescription": "Wir haben für euch tausende blinkende Lichter, Platinen und alles weitere mitgebracht, damit ihr euch auf der Tanzfläche oder im Zelt wieder findet. Für den Workshop sind keine Vorkenntnisse oder Anmeldungen nötig; wir helfen euch, euren individuellen und blinkenden Festivalschmuck zu basteln. Dauer: Eine halbe Stunde Zeit solltest du einplanen. Start jederzeit möglich, sofern gerade ein Platz frei ist. Länge: 30 Minuten pro person",
+    "shortDescription": "Der Workshop findet in der Jurte neben dem Cabaret statt! Wir haben für euch tausende blinkende Lichter, Platinen und alles weitere mitgebracht, damit ihr euch auf der Tanzfläche oder im Zelt wieder findet. Für den Workshop sind keine Vorkenntnisse oder Anmeldungen nötig; wir helfen euch, euren individuellen und blinkenden Festivalschmuck zu basteln. Dauer: Eine halbe Stunde Zeit solltest du einplanen. Start jederzeit möglich, sofern gerade ein Platz frei ist. Länge: 30 Minuten pro Person.",
+    "fullDescription": "Der Workshop findet in der Jurte neben dem Cabaret statt! Wir haben für euch tausende blinkende Lichter, Platinen und alles weitere mitgebracht, damit ihr euch auf der Tanzfläche oder im Zelt wieder findet. Für den Workshop sind keine Vorkenntnisse oder Anmeldungen nötig; wir helfen euch, euren individuellen und blinkenden Festivalschmuck zu basteln. Dauer: Eine halbe Stunde Zeit solltest du einplanen. Start jederzeit möglich, sofern gerade ein Platz frei ist. Länge: 30 Minuten pro Person.",
     "programUrl": "https://attension-festival.de/programm#program_18525",
     "day": "Sa",
     "time": "12:00"
@@ -5303,8 +5333,8 @@
     "minAge": null,
     "language": null,
     "stage": "F | Karla Kutter",
-    "shortDescription": "stretch, impro, spielen und bewegen ab donnerstag um 12 am kutter.",
-    "fullDescription": "stretch, impro, spielen und bewegen ab donnerstag um 12 am kutter.",
+    "shortDescription": "Stretch, Impro, spielen und bewegen ab Donnerstag um 12 am Kutter.",
+    "fullDescription": "Stretch, Impro, spielen und bewegen ab Donnerstag um 12 am Kutter.",
     "programUrl": "https://attension-festival.de/programm#program_18343",
     "day": "Sa",
     "time": "12:00"
@@ -5426,6 +5456,21 @@
     "shortDescription": "In einem kleinen Boot nähern sich zwei Männer einem behelfsmäßigen Floß – eine erste wackelige Zuflucht vor der Nässe und der Ungewissheit. Dem unerbittlichen Element des Wassers trotzen sie mit akrobatischen Balanceakten. Mit feinsinnigem Humor erzählt diese absurde Wasserakrobatik von Instabilität und der gemeinsamen Suche nach Halt. Das französische Duo zeigt voller Menschlichkeit und Risikofreude, wie sich der Kurs halten lässt, wenn das Leben ins Wanken gerät.",
     "fullDescription": "In einem kleinen Boot nähern sich zwei Männer einem behelfsmäßigen Floß – eine erste wackelige Zuflucht vor der Nässe und der Ungewissheit. Dem unerbittlichen Element des Wassers trotzen sie mit akrobatischen Balanceakten. Mit feinsinnigem Humor erzählt diese absurde Wasserakrobatik von Instabilität und der gemeinsamen Suche nach Halt. Das französische Duo zeigt voller Menschlichkeit und Risikofreude, wie sich der Kurs halten lässt, wenn das Leben ins Wanken gerät.",
     "programUrl": "https://attension-festival.de/programm#program_17671",
+    "day": "Sa",
+    "time": "12:30"
+  },
+  {
+    "title": "„Dance Out Loud“ - Unsere Militanz gegen ihre Militarisierung",
+    "type": "Kino/Workshops/Lesungen",
+    "genre": "Workshop",
+    "organizer": null,
+    "duration": "120 Min.",
+    "minAge": "16+",
+    "language": "deutsch",
+    "stage": "B | Conti:nü",
+    "shortDescription": "Im Workshop nähern wir uns gedanklich & sinnlich, was aktuelle Kriegsrhetoriken in uns auslösen - durch queer-feministische Bewegungspraxis. Unsere eigene Militanz, die sich der verschärften Militarisierung der Gesellschaft entgegenstellt steht genau so im Fokus, wie die eigene Körperlichkeit, individuelle Bewegungsräume und der widerständige Ausdruck. Eingeladen sind ALLE mit & ohne Tanzerfahrungen. Wichtig ist uns im Tanzen stattfindende Berührungen konsensuell zu gestalten.",
+    "fullDescription": "Im Workshop nähern wir uns gedanklich & sinnlich, was aktuelle Kriegsrhetoriken in uns auslösen - durch queer-feministische Bewegungspraxis. Unsere eigene Militanz, die sich der verschärften Militarisierung der Gesellschaft entgegenstellt steht genau so im Fokus, wie die eigene Körperlichkeit, individuelle Bewegungsräume und der widerständige Ausdruck. Eingeladen sind ALLE mit & ohne Tanzerfahrungen. Wichtig ist uns im Tanzen stattfindende Berührungen konsensuell zu gestalten.",
+    "programUrl": "https://attension-festival.de/programm#program_18407",
     "day": "Sa",
     "time": "12:30"
   },
@@ -5693,8 +5738,8 @@
     "minAge": null,
     "language": "deutsch",
     "stage": "C | Casino",
-    "shortDescription": "Fünf Zeichner:innen, fünf eigene Welten: Kommt vorbei im Comicgeheimclub und taucht ein in die mitreißende Lesung an die Wand projizierter Comics!",
-    "fullDescription": "Fünf Zeichner:innen, fünf eigene Welten: Kommt vorbei im Comicgeheimclub und taucht ein in die mitreißende Lesung an die Wand projizierter Comics!",
+    "shortDescription": "Fünf Zeichnerinnen bringen unterschiedliche Comics mit und präsentieren sie gemeinsam als Comiclesung. Dabei werden die Panels auf eine Leinwand projiziert, während die Geschichten live vorgelesen werden. Ob ihr schon große Comicfans seid oder noch nie eine Comiclesung gesehen habt: Kommt vorbei, machts euch gemütlich und lasst euch überraschen, wir haben für jede*n was dabei.",
+    "fullDescription": "Fünf Zeichnerinnen bringen unterschiedliche Comics mit und präsentieren sie gemeinsam als Comiclesung. Dabei werden die Panels auf eine Leinwand projiziert, während die Geschichten live vorgelesen werden. Ob ihr schon große Comicfans seid oder noch nie eine Comiclesung gesehen habt: Kommt vorbei, machts euch gemütlich und lasst euch überraschen, wir haben für jede*n was dabei.",
     "programUrl": "https://attension-festival.de/programm#program_18324",
     "day": "Sa",
     "time": "14:00"
@@ -5951,6 +5996,21 @@
     "shortDescription": "Eine bunte Truppe trägt ihr Geheimnis zum Haus der Lichter.",
     "fullDescription": "Eine bunte Truppe trägt ihr Geheimnis zum Haus der Lichter.",
     "programUrl": "https://attension-festival.de/programm#program_18401",
+    "day": "Sa",
+    "time": "15:00"
+  },
+  {
+    "title": "eternal algues",
+    "type": "Sideshows/Walkacts/Installationen",
+    "genre": "Performance",
+    "organizer": null,
+    "duration": "12 min",
+    "minAge": null,
+    "language": null,
+    "stage": "F| Lighthouse",
+    "shortDescription": "Da ist eine Geschichte. Sie fließt durch den Raum. Driftet aus einer anderen Welt hinein. Kriecht um deine Füße, verwebt sich mit den Wänden, steigt auf und… ist weg. Aber keine Panik. Ihr werdet sie wieder finden. Der Leuchtturm zeigt euch den weg. Ein interaktiver Hörspielraum. Zwischen Wissenschaft und Fantasie. Eine kleine Geschichte über die Entstehung des Lebens wie Ihr sie so noch nie gehört habt.",
+    "fullDescription": "Da ist eine Geschichte. Sie fließt durch den Raum. Driftet aus einer anderen Welt hinein. Kriecht um deine Füße, verwebt sich mit den Wänden, steigt auf und… ist weg. Aber keine Panik. Ihr werdet sie wieder finden. Der Leuchtturm zeigt euch den weg. Ein interaktiver Hörspielraum. Zwischen Wissenschaft und Fantasie. Eine kleine Geschichte über die Entstehung des Lebens wie Ihr sie so noch nie gehört habt.",
+    "programUrl": "https://attension-festival.de/programm#program_18389",
     "day": "Sa",
     "time": "15:00"
   },
@@ -6233,8 +6293,8 @@
     "minAge": null,
     "language": null,
     "stage": "F | Karla Kutter",
-    "shortDescription": null,
-    "fullDescription": null,
+    "shortDescription": "Überall rauscht es. Überall liegt Staub. Rauschen bündelt die Frequenzen. Staub bündelt Informationen über uns und unser Tun. Die Geschäftigkeit der Menschen wird zu Rauschen. Die Welt löst sich in Staub auf. Rauschen ist grau. Rauschen ist bunt. Rausch durch Verzicht. F.S.Blumm erzeugt Rauschen mit Hilfe von Filtern, kreisenden Bewegungen und runden Objekten und baut damit eine Projektionsfläche für die widerspenstigen Wortspiele von Pastor Leumund. Die Performerin Hieronyma Busch zieht darüber ihre eigenen schrägen Kreise.",
+    "fullDescription": "Überall rauscht es. Überall liegt Staub. Rauschen bündelt die Frequenzen. Staub bündelt Informationen über uns und unser Tun. Die Geschäftigkeit der Menschen wird zu Rauschen. Die Welt löst sich in Staub auf. Rauschen ist grau. Rauschen ist bunt. Rausch durch Verzicht. F.S.Blumm erzeugt Rauschen mit Hilfe von Filtern, kreisenden Bewegungen und runden Objekten und baut damit eine Projektionsfläche für die widerspenstigen Wortspiele von Pastor Leumund. Die Performerin Hieronyma Busch zieht darüber ihre eigenen schrägen Kreise.",
     "programUrl": "https://attension-festival.de/programm#program_18363",
     "day": "Sa",
     "time": "16:00"
@@ -7073,8 +7133,8 @@
     "minAge": null,
     "language": "deutsch",
     "stage": "C | Casino",
-    "shortDescription": "Eine 36-jährige Autorin kämpft gegen ihre biologische Uhr und ihren unerfüllten Kinderwunsch. Nach einer gescheiterten Beziehung und einem Tinder-Date mit einem chaotischen Schauspieler gerät ihr Leben aus den Fugen. Yade Yasemin Önder erzählt scharfsinnig und schonungslos von Abhängigkeit, Obsession, Feminismus und der Suche nach Selbstbestimmung.",
-    "fullDescription": "Eine 36-jährige Autorin kämpft gegen ihre biologische Uhr und ihren unerfüllten Kinderwunsch. Nach einer gescheiterten Beziehung und einem Tinder-Date mit einem chaotischen Schauspieler gerät ihr Leben aus den Fugen. Yade Yasemin Önder erzählt scharfsinnig und schonungslos von Abhängigkeit, Obsession, Feminismus und der Suche nach Selbstbestimmung.",
+    "shortDescription": "ANTI MÜLLER erzählt die Geschichte einer 36-jährigen Autorin, deren biologische Uhr unerbittlich tickt. Nach Jahren in einer fruchtlosen Beziehung mit dem gefeierten Schriftsteller Kar Kauz, der ihren Kinderwunsch stets aufschob, stürzt sie sich in ein Tinder-Date mit dem chaotischen Schauspieler Andi. Getrieben von ihrer Sehnsucht nach einem Kind greift sie zu immer radikaleren Maßnahmen, um dieses Ziel zu erreichen und die Deutungshoheit über sich selbst zurückzuerlangen. Scharfsinnig erzählt der Roman von Abhängigkeit, Obsession und den Widersprüchen unserer Zeit; von pseudo-feministischen Männern, identitätspolitischen Grabenkämpfen und der verzweifelten Suche nach Selbstbestimmung.",
+    "fullDescription": "ANTI MÜLLER erzählt die Geschichte einer 36-jährigen Autorin, deren biologische Uhr unerbittlich tickt. Nach Jahren in einer fruchtlosen Beziehung mit dem gefeierten Schriftsteller Kar Kauz, der ihren Kinderwunsch stets aufschob, stürzt sie sich in ein Tinder-Date mit dem chaotischen Schauspieler Andi. Getrieben von ihrer Sehnsucht nach einem Kind greift sie zu immer radikaleren Maßnahmen, um dieses Ziel zu erreichen und die Deutungshoheit über sich selbst zurückzuerlangen. Scharfsinnig erzählt der Roman von Abhängigkeit, Obsession und den Widersprüchen unserer Zeit; von pseudo-feministischen Männern, identitätspolitischen Grabenkämpfen und der verzweifelten Suche nach Selbstbestimmung.",
     "programUrl": "https://attension-festival.de/programm#program_18330",
     "day": "Sa",
     "time": "19:30"
@@ -7155,6 +7215,21 @@
     "time": "19:30"
   },
   {
+    "title": "Pyrotechnische Früherziehung",
+    "type": "Kinderprogramm",
+    "genre": "Workshop",
+    "organizer": null,
+    "duration": "120 Min.",
+    "minAge": "10+",
+    "language": "deutsch",
+    "stage": "36 | Turmbühne",
+    "shortDescription": "Wo beginnt die Reise des Feuers? Und wie malt es Formen und Farben in den Himmel? Zusammen erforschen wir, wie es von der ersten Flamme zum Feuerwerk kam. Wie es funktioniert, warum es so magisch ist, wie sich Gefahr und Faszination begegnen. Risiken und Nebenwirkungen: Nie wieder Angst an Silvester! Für max. 20 junge Menschen zwischen 10 und 14 Jahren. Anmeldung am Infopoint. Der genaue Treffpunkt wird bei der Anmeldung bekannt gegeben.",
+    "fullDescription": "Wo beginnt die Reise des Feuers? Und wie malt es Formen und Farben in den Himmel? Zusammen erforschen wir, wie es von der ersten Flamme zum Feuerwerk kam. Wie es funktioniert, warum es so magisch ist, wie sich Gefahr und Faszination begegnen. Risiken und Nebenwirkungen: Nie wieder Angst an Silvester! Für max. 20 junge Menschen zwischen 10 und 14 Jahren. Anmeldung am Infopoint. Der genaue Treffpunkt wird bei der Anmeldung bekannt gegeben.",
+    "programUrl": "https://attension-festival.de/programm#program_18475",
+    "day": "Sa",
+    "time": "19:45"
+  },
+  {
     "title": "Die (fast) perfekte Quizshow",
     "type": "Sideshows/Walkacts/Installationen",
     "genre": "Quizshow",
@@ -7223,8 +7298,8 @@
     "minAge": null,
     "language": null,
     "stage": "F | Karla Kutter",
-    "shortDescription": null,
-    "fullDescription": null,
+    "shortDescription": "Lux Lauterwasser ist ein DJ-Duo aus Pforzheim, das sich während des Designstudiums kennenlernte und seitdem gemeinsam musikalische Projekte verfolgt. In ihren Sets verbinden sie unterschiedliche Einflüsse wie u.a Ambient, Jazz, Krautrock, Post-Punk, NDW, Cosmic Disco, World und elektronische Musik. Beide waren an der Gründung des Off-Spaces Leerstand als Freiraum beteiligt und betreiben seit mehreren Jahren LAF-Musik, ein kleines Label mit Veranstaltungsreihe und Podcastreihe.",
+    "fullDescription": "Lux Lauterwasser ist ein DJ-Duo aus Pforzheim, das sich während des Designstudiums kennenlernte und seitdem gemeinsam musikalische Projekte verfolgt. In ihren Sets verbinden sie unterschiedliche Einflüsse wie u.a Ambient, Jazz, Krautrock, Post-Punk, NDW, Cosmic Disco, World und elektronische Musik. Beide waren an der Gründung des Off-Spaces Leerstand als Freiraum beteiligt und betreiben seit mehreren Jahren LAF-Musik, ein kleines Label mit Veranstaltungsreihe und Podcastreihe.",
     "programUrl": "https://attension-festival.de/programm#program_18392",
     "day": "Sa",
     "time": "20:00"
@@ -8783,8 +8858,8 @@
     "minAge": null,
     "language": null,
     "stage": "Z | Cabaret",
-    "shortDescription": "Wir haben für euch tausende blinkende Lichter, Platinen und alles weitere mitgebracht, damit ihr euch auf der Tanzfläche oder im Zelt wieder findet. Für den Workshop sind keine Vorkenntnisse oder Anmeldungen nötig; wir helfen euch, euren individuellen und blinkenden Festivalschmuck zu basteln. Dauer: Eine halbe Stunde Zeit solltest du einplanen. Start jederzeit möglich, sofern gerade ein Platz frei ist. Länge: 30 Minuten pro person",
-    "fullDescription": "Wir haben für euch tausende blinkende Lichter, Platinen und alles weitere mitgebracht, damit ihr euch auf der Tanzfläche oder im Zelt wieder findet. Für den Workshop sind keine Vorkenntnisse oder Anmeldungen nötig; wir helfen euch, euren individuellen und blinkenden Festivalschmuck zu basteln. Dauer: Eine halbe Stunde Zeit solltest du einplanen. Start jederzeit möglich, sofern gerade ein Platz frei ist. Länge: 30 Minuten pro person",
+    "shortDescription": "Der Workshop findet in der Jurte neben dem Cabaret statt! Wir haben für euch tausende blinkende Lichter, Platinen und alles weitere mitgebracht, damit ihr euch auf der Tanzfläche oder im Zelt wieder findet. Für den Workshop sind keine Vorkenntnisse oder Anmeldungen nötig; wir helfen euch, euren individuellen und blinkenden Festivalschmuck zu basteln. Dauer: Eine halbe Stunde Zeit solltest du einplanen. Start jederzeit möglich, sofern gerade ein Platz frei ist. Länge: 30 Minuten pro Person.",
+    "fullDescription": "Der Workshop findet in der Jurte neben dem Cabaret statt! Wir haben für euch tausende blinkende Lichter, Platinen und alles weitere mitgebracht, damit ihr euch auf der Tanzfläche oder im Zelt wieder findet. Für den Workshop sind keine Vorkenntnisse oder Anmeldungen nötig; wir helfen euch, euren individuellen und blinkenden Festivalschmuck zu basteln. Dauer: Eine halbe Stunde Zeit solltest du einplanen. Start jederzeit möglich, sofern gerade ein Platz frei ist. Länge: 30 Minuten pro Person.",
     "programUrl": "https://attension-festival.de/programm#program_18525",
     "day": "So",
     "time": "12:00"
@@ -8813,8 +8888,8 @@
     "minAge": null,
     "language": null,
     "stage": "F | Karla Kutter",
-    "shortDescription": "stretch, impro, spielen und bewegen ab donnerstag um 12 am kutter.",
-    "fullDescription": "stretch, impro, spielen und bewegen ab donnerstag um 12 am kutter.",
+    "shortDescription": "Stretch, Impro, spielen und bewegen ab Donnerstag um 12 am Kutter.",
+    "fullDescription": "Stretch, Impro, spielen und bewegen ab Donnerstag um 12 am Kutter.",
     "programUrl": "https://attension-festival.de/programm#program_18343",
     "day": "So",
     "time": "12:00"
@@ -9480,6 +9555,21 @@
     "time": "15:00"
   },
   {
+    "title": "eternal algues",
+    "type": "Sideshows/Walkacts/Installationen",
+    "genre": "Performance",
+    "organizer": null,
+    "duration": "12 min",
+    "minAge": null,
+    "language": null,
+    "stage": "F| Lighthouse",
+    "shortDescription": "Da ist eine Geschichte. Sie fließt durch den Raum. Driftet aus einer anderen Welt hinein. Kriecht um deine Füße, verwebt sich mit den Wänden, steigt auf und… ist weg. Aber keine Panik. Ihr werdet sie wieder finden. Der Leuchtturm zeigt euch den weg. Ein interaktiver Hörspielraum. Zwischen Wissenschaft und Fantasie. Eine kleine Geschichte über die Entstehung des Lebens wie Ihr sie so noch nie gehört habt.",
+    "fullDescription": "Da ist eine Geschichte. Sie fließt durch den Raum. Driftet aus einer anderen Welt hinein. Kriecht um deine Füße, verwebt sich mit den Wänden, steigt auf und… ist weg. Aber keine Panik. Ihr werdet sie wieder finden. Der Leuchtturm zeigt euch den weg. Ein interaktiver Hörspielraum. Zwischen Wissenschaft und Fantasie. Eine kleine Geschichte über die Entstehung des Lebens wie Ihr sie so noch nie gehört habt.",
+    "programUrl": "https://attension-festival.de/programm#program_18389",
+    "day": "So",
+    "time": "15:00"
+  },
+  {
     "title": "Fragments",
     "type": "Vouchershow",
     "genre": "Zeitgenössischer Zirkus",
@@ -9585,6 +9675,21 @@
     "time": "15:30"
   },
   {
+    "title": "The depression is chronic but my ass is iconic",
+    "type": "Kino/Workshops/Lesungen",
+    "genre": "Musikalische Erzählung",
+    "organizer": null,
+    "duration": "60 Min.",
+    "minAge": null,
+    "language": "deutsch",
+    "stage": "N | Räuber:innenhöhle",
+    "shortDescription": "Wie es ist, wenn sich der Lebensradius auf wenige Meter beschränkt, man in der Kunsttherapie schwarze Löcher malt oder in einer Klinik hinter vergitterten Fenster den Sommer verlebt? Black Mirror Park liest aus seinen Tagebüchern aus der Krisenstation des Neuköllner Klinikums. Metrosoft spielt live Musik dazu.",
+    "fullDescription": "Wie es ist, wenn sich der Lebensradius auf wenige Meter beschränkt, man in der Kunsttherapie schwarze Löcher malt oder in einer Klinik hinter vergitterten Fenster den Sommer verlebt? Black Mirror Park liest aus seinen Tagebüchern aus der Krisenstation des Neuköllner Klinikums. Metrosoft spielt live Musik dazu.",
+    "programUrl": "https://attension-festival.de/programm#program_18480",
+    "day": "So",
+    "time": "15:30"
+  },
+  {
     "title": "Underfoot",
     "type": "Theater/Tanz/Zirkus",
     "genre": "Zeitgenössischer Zirkus",
@@ -9623,8 +9728,8 @@
     "minAge": null,
     "language": null,
     "stage": "F | Karla Kutter",
-    "shortDescription": null,
-    "fullDescription": null,
+    "shortDescription": "Nicht so sicher, wie das zu Labeln. schwanke zwischen interaktive Spielhalle und Improvisationsbühne. Es ist auf jeden Fall ein Mitmach Konzert.",
+    "fullDescription": "Nicht so sicher, wie das zu Labeln. schwanke zwischen interaktive Spielhalle und Improvisationsbühne. Es ist auf jeden Fall ein Mitmach Konzert.",
     "programUrl": "https://attension-festival.de/programm#program_18361",
     "day": "So",
     "time": "16:00"
@@ -9701,6 +9806,21 @@
     "shortDescription": "Ein Performer und 35 blaue Plastikkanister suchen nach Gemeinsamkeiten. Den Kanistern fällt es schwer, sich zwischen einem Dasein als Nutzobjekt oder Figur zu entscheiden. Ein gesungenes „O“ macht den entscheidenden Unterschied – spontan gründen sie einen siebenstimmigen Chor. Irgendwo zwischen Objekttheater, Klangskulptur und interaktiver Installation erschafft Marius Alsleben eine überraschende Welt, in der Alltagsgegenstände lebendig scheinen.",
     "fullDescription": "Ein Performer und 35 blaue Plastikkanister suchen nach Gemeinsamkeiten. Den Kanistern fällt es schwer, sich zwischen einem Dasein als Nutzobjekt oder Figur zu entscheiden. Ein gesungenes „O“ macht den entscheidenden Unterschied – spontan gründen sie einen siebenstimmigen Chor. Irgendwo zwischen Objekttheater, Klangskulptur und interaktiver Installation erschafft Marius Alsleben eine überraschende Welt, in der Alltagsgegenstände lebendig scheinen.",
     "programUrl": "https://attension-festival.de/programm#program_18258",
+    "day": "So",
+    "time": "16:30"
+  },
+  {
+    "title": "Cynthia Matisse",
+    "type": "Musik",
+    "genre": "DJ",
+    "organizer": null,
+    "duration": null,
+    "minAge": null,
+    "language": null,
+    "stage": "N | Räuber:innenhöhle",
+    "shortDescription": null,
+    "fullDescription": null,
+    "programUrl": "https://attension-festival.de/programm#program_18565",
     "day": "So",
     "time": "16:30"
   },
@@ -9848,8 +9968,8 @@
     "minAge": null,
     "language": null,
     "stage": "F | Karla Kutter",
-    "shortDescription": null,
-    "fullDescription": null,
+    "shortDescription": "„Ein aufstrebender Newcomer mit unverwechselbarem Sound zwischen Tradition und Zukunft” — so stünde es hier, hätte AcidmaYo den Text nicht selbst geschrieben. Tatsächlich: bass- und dublastig, viel Hall, wenig Eile.",
+    "fullDescription": "„Ein aufstrebender Newcomer mit unverwechselbarem Sound zwischen Tradition und Zukunft” — so stünde es hier, hätte AcidmaYo den Text nicht selbst geschrieben. Tatsächlich: bass- und dublastig, viel Hall, wenig Eile.",
     "programUrl": "https://attension-festival.de/programm#program_18341",
     "day": "So",
     "time": "18:00"
@@ -9928,6 +10048,21 @@
     "programUrl": "https://attension-festival.de/programm#program_17852",
     "day": "So",
     "time": "18:00"
+  },
+  {
+    "title": "barbara hofmann & sk.mize",
+    "type": "Musik",
+    "genre": "DJ",
+    "organizer": null,
+    "duration": null,
+    "minAge": null,
+    "language": null,
+    "stage": "N | Räuber:innenhöhle",
+    "shortDescription": null,
+    "fullDescription": null,
+    "programUrl": "https://attension-festival.de/programm#program_18482",
+    "day": "So",
+    "time": "18:30"
   },
   {
     "title": "Do You Love Me",
@@ -10215,6 +10350,21 @@
     "time": "21:00"
   },
   {
+    "title": "Anselmus",
+    "type": "Musik",
+    "genre": "DJ",
+    "organizer": null,
+    "duration": null,
+    "minAge": null,
+    "language": null,
+    "stage": "N | Räuber:innenhöhle",
+    "shortDescription": "DJ and Producer, technic für light und DIY kram 🫰🏻",
+    "fullDescription": "DJ and Producer, technic für light und DIY kram 🫰🏻",
+    "programUrl": "https://attension-festival.de/programm#program_18481",
+    "day": "So",
+    "time": "21:00"
+  },
+  {
     "title": "Clic",
     "type": "Theater/Tanz/Zirkus",
     "genre": "Figurentheater / Film",
@@ -10438,6 +10588,21 @@
     "programUrl": "https://attension-festival.de/programm#program_18569",
     "day": "So",
     "time": "22:30"
+  },
+  {
+    "title": "COGNAC200 b2b kobpy",
+    "type": "Musik",
+    "genre": "DJ",
+    "organizer": null,
+    "duration": null,
+    "minAge": null,
+    "language": null,
+    "stage": "N | Räuber:innenhöhle",
+    "shortDescription": null,
+    "fullDescription": null,
+    "programUrl": "https://attension-festival.de/programm#program_18483",
+    "day": "So",
+    "time": "23:00"
   },
   {
     "title": "Conhort",
