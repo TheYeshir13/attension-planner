@@ -390,6 +390,21 @@
     "time": "16:00"
   },
   {
+    "title": "Smoothin Groovin",
+    "type": "Musik",
+    "genre": "DJ",
+    "organizer": null,
+    "duration": null,
+    "minAge": null,
+    "language": null,
+    "stage": "N | Räuber:innenhöhle",
+    "shortDescription": null,
+    "fullDescription": null,
+    "programUrl": "https://attension-festival.de/programm#program_18443",
+    "day": "Do",
+    "time": "16:00"
+  },
+  {
     "title": "Vertrauen wirft seine Schatten voraus – und wir spielen mit ihnen",
     "type": "Kino/Workshops/Lesungen",
     "genre": "Workshop",
@@ -686,6 +701,21 @@
     "shortDescription": "Die Technomaschine ist eine intuitive, kollaboratives Instrument, ständig zugänglich und spielbar für jeden und jede im Eingang des Kutters. In diesem Slot wird sie einmal an die Anlage gesteckt und laut aufgedreht.",
     "fullDescription": "Die Technomaschine ist eine intuitive, kollaboratives Instrument, ständig zugänglich und spielbar für jeden und jede im Eingang des Kutters. In diesem Slot wird sie einmal an die Anlage gesteckt und laut aufgedreht.",
     "programUrl": "https://attension-festival.de/programm#program_18377",
+    "day": "Do",
+    "time": "18:00"
+  },
+  {
+    "title": "Flash Tempête",
+    "type": "Sideshows/Walkacts/Installationen",
+    "genre": "Sideshow",
+    "organizer": null,
+    "duration": null,
+    "minAge": null,
+    "language": null,
+    "stage": "8 | Seebühne",
+    "shortDescription": "Erlebt puren Nervenkitzel an Bord eines Bootes auf tobender See – ganz ohne Risiko und nasse Füße. „Flash Tempête“ ist Fotostudio und Sturmsimulator zugleich. Per Knopfdruck gestaltet ihr die Spezialeffekte: peitschenden Regen, tosende Wellen, heulenden Wind oder kreischende Möwen. Trotzt als furchtlose Kapitän:innen, mystische Meermenschen oder wettergegerbte Fischer:innen den Naturgewalten. Als Andenken dieser wilden Reise wartet am Ende ein gedrucktes Foto auf euch.",
+    "fullDescription": "Erlebt puren Nervenkitzel an Bord eines Bootes auf tobender See – ganz ohne Risiko und nasse Füße. „Flash Tempête“ ist Fotostudio und Sturmsimulator zugleich. Per Knopfdruck gestaltet ihr die Spezialeffekte: peitschenden Regen, tosende Wellen, heulenden Wind oder kreischende Möwen. Trotzt als furchtlose Kapitän:innen, mystische Meermenschen oder wettergegerbte Fischer:innen den Naturgewalten. Als Andenken dieser wilden Reise wartet am Ende ein gedrucktes Foto auf euch.",
+    "programUrl": "https://attension-festival.de/programm#program_18581",
     "day": "Do",
     "time": "18:00"
   },
@@ -1028,8 +1058,8 @@
     "minAge": null,
     "language": "englisch",
     "stage": "Outdoor (tba)",
-    "shortDescription": "Eine Parodie, die gleichermaßen unterhält und verstört! Melon, Mardi und Rossinyol geraten in einen unerwarteten Konflikt, der ihren ungezähmten Überlebensdrang und ihre rohe Tollpatschigkeit offenbart. Seht eine raue Freundschaft aus Schuld und Verantwortung, ein unwahrscheinliches Verbrechen, einen verdächtigen Prozess und eine absurde Strafe – die Willkür der Justiz aus der Perspektive dreier Clowns. Eine unglaubliche Inszenierung mit der Gefahr, sich totzulachen.",
-    "fullDescription": "Eine Parodie, die gleichermaßen unterhält und verstört! Melon, Mardi und Rossinyol geraten in einen unerwarteten Konflikt, der ihren ungezähmten Überlebensdrang und ihre rohe Tollpatschigkeit offenbart. Seht eine raue Freundschaft aus Schuld und Verantwortung, ein unwahrscheinliches Verbrechen, einen verdächtigen Prozess und eine absurde Strafe – die Willkür der Justiz aus der Perspektive dreier Clowns. Eine unglaubliche Inszenierung mit der Gefahr, sich totzulachen.",
+    "shortDescription": "Content Warnings im Text: Eine Parodie, die gleichermaßen unterhält und verstört! Melon, Mardi und Rossinyol geraten in einen unerwarteten Konflikt, der ihren ungezähmten Überlebensdrang und ihre rohe Tollpatschigkeit offenbart. Seht eine raue Freundschaft aus Schuld und Verantwortung, ein unwahrscheinliches Verbrechen, einen verdächtigen Prozess und eine gewaltsame, tödliche Strafe – die Willkür der Justiz aus der Perspektive dreier Clowns. Eine unglaubliche Inszenierung mit der Gefahr, sich totzulachen.",
+    "fullDescription": "Content Warnings im Text: Eine Parodie, die gleichermaßen unterhält und verstört! Melon, Mardi und Rossinyol geraten in einen unerwarteten Konflikt, der ihren ungezähmten Überlebensdrang und ihre rohe Tollpatschigkeit offenbart. Seht eine raue Freundschaft aus Schuld und Verantwortung, ein unwahrscheinliches Verbrechen, einen verdächtigen Prozess und eine gewaltsame, tödliche Strafe – die Willkür der Justiz aus der Perspektive dreier Clowns. Eine unglaubliche Inszenierung mit der Gefahr, sich totzulachen.",
     "programUrl": "https://attension-festival.de/programm#program_16567",
     "day": "Do",
     "time": "19:30"
@@ -1238,8 +1268,8 @@
     "minAge": null,
     "language": null,
     "stage": "N | Räuber:innenhöhle",
-    "shortDescription": null,
-    "fullDescription": null,
+    "shortDescription": "Überall Algen - eine Schäferhund Rottweiler Mischung. Punk aus berlin",
+    "fullDescription": "Überall Algen - eine Schäferhund Rottweiler Mischung. Punk aus berlin",
     "programUrl": "https://attension-festival.de/programm#program_18445",
     "day": "Do",
     "time": "20:30"
@@ -1408,6 +1438,21 @@
     "programUrl": "https://attension-festival.de/programm#program_17737",
     "day": "Do",
     "time": "22:00"
+  },
+  {
+    "title": "Flash Tempête",
+    "type": "Sideshows/Walkacts/Installationen",
+    "genre": "Sideshow",
+    "organizer": null,
+    "duration": null,
+    "minAge": null,
+    "language": null,
+    "stage": "8 | Seebühne",
+    "shortDescription": "Erlebt puren Nervenkitzel an Bord eines Bootes auf tobender See – ganz ohne Risiko und nasse Füße. „Flash Tempête“ ist Fotostudio und Sturmsimulator zugleich. Per Knopfdruck gestaltet ihr die Spezialeffekte: peitschenden Regen, tosende Wellen, heulenden Wind oder kreischende Möwen. Trotzt als furchtlose Kapitän:innen, mystische Meermenschen oder wettergegerbte Fischer:innen den Naturgewalten. Als Andenken dieser wilden Reise wartet am Ende ein gedrucktes Foto auf euch.",
+    "fullDescription": "Erlebt puren Nervenkitzel an Bord eines Bootes auf tobender See – ganz ohne Risiko und nasse Füße. „Flash Tempête“ ist Fotostudio und Sturmsimulator zugleich. Per Knopfdruck gestaltet ihr die Spezialeffekte: peitschenden Regen, tosende Wellen, heulenden Wind oder kreischende Möwen. Trotzt als furchtlose Kapitän:innen, mystische Meermenschen oder wettergegerbte Fischer:innen den Naturgewalten. Als Andenken dieser wilden Reise wartet am Ende ein gedrucktes Foto auf euch.",
+    "programUrl": "https://attension-festival.de/programm#program_18581",
+    "day": "Do",
+    "time": "22:30"
   },
   {
     "title": "La Planète Sauvage - Der Phantastische Planet",
@@ -2175,6 +2220,36 @@
     "time": "12:30"
   },
   {
+    "title": "Familienakrobatik",
+    "type": "Kino/Workshops/Lesungen",
+    "genre": "Workshop",
+    "organizer": null,
+    "duration": "90 Min.",
+    "minAge": null,
+    "language": "deutsch",
+    "stage": "A | Workshophangar",
+    "shortDescription": "Dieser Workshop richtet sich an Kinder ab 5 Jahren mit Begleitpersonen. Gemeinsam werden partnerakrobatische Figuren gebaut, Räder geschlagen und erste Handstände probiert. Auch Bewegungsspiele und Animal Movements erwarten euch bei der Familienakrobatik.",
+    "fullDescription": "Dieser Workshop richtet sich an Kinder ab 5 Jahren mit Begleitpersonen. Gemeinsam werden partnerakrobatische Figuren gebaut, Räder geschlagen und erste Handstände probiert. Auch Bewegungsspiele und Animal Movements erwarten euch bei der Familienakrobatik.",
+    "programUrl": "https://attension-festival.de/programm#program_18512",
+    "day": "Fr",
+    "time": "12:55"
+  },
+  {
+    "title": "Matekreis",
+    "type": "Kino/Workshops/Lesungen",
+    "genre": "Workshop",
+    "organizer": null,
+    "duration": "90 Min.",
+    "minAge": "14+",
+    "language": "englisch, deutsch, portugiesisch, spanisch, italienisch",
+    "stage": "A | Workshophangar",
+    "shortDescription": "Wir werden lernen das echte Matekraut zuzubereiten und zu trinken. Es werden viele Fragen beantwortet und Geschichten der Guarani Ursprünge dieses Getränks erzählet. Wir werden über die aktuelle Kultur (auch in Deutschland mit den Matelimos) reflektieren und zu den Wirkungsweisen (Effekte) des Mates auf theoretischer und praktischer Ebene lernen und erfahren. Und dabei natürlich einfach verschiedene Matesorten viel trinken.",
+    "fullDescription": "Wir werden lernen das echte Matekraut zuzubereiten und zu trinken. Es werden viele Fragen beantwortet und Geschichten der Guarani Ursprünge dieses Getränks erzählet. Wir werden über die aktuelle Kultur (auch in Deutschland mit den Matelimos) reflektieren und zu den Wirkungsweisen (Effekte) des Mates auf theoretischer und praktischer Ebene lernen und erfahren. Und dabei natürlich einfach verschiedene Matesorten viel trinken.",
+    "programUrl": "https://attension-festival.de/programm#program_18515",
+    "day": "Fr",
+    "time": "12:58"
+  },
+  {
     "title": "Das wandelnde Schloss",
     "type": "Kinderprogramm",
     "genre": "Kino",
@@ -2370,6 +2445,21 @@
     "time": "13:30"
   },
   {
+    "title": "Words and Worlds - Character crafting table",
+    "type": "Kino/Workshops/Lesungen",
+    "genre": "Workshop",
+    "organizer": null,
+    "duration": "120 Min.",
+    "minAge": "10+",
+    "language": "englisch, deutsch",
+    "stage": "A | Workshophangar",
+    "shortDescription": "Du bist noch nicht bereit, dich auf eine komplette Sitzung von „Words and Worlds – Gemeinsame Charakterentwicklung“ einzulassen? Dann schau doch mal an unserem offenen Basteltisch in der Nähe des Eingangs vorbei. Nimm dir eine Inspirationskarte, schnapp dir einen Bleistift und erwecke in deinem eigenen Tempo einen Charakter zum Leben – ganz unverbindlich und ohne Vorkenntnisse. Du brauchst nur Neugier. Und wer weiß, vielleicht wartest ja noch weitere Geschichten auf dich. Anfänger sind nicht nur willkommen – das hier ist genau das Richtige für dich.",
+    "fullDescription": "Du bist noch nicht bereit, dich auf eine komplette Sitzung von „Words and Worlds – Gemeinsame Charakterentwicklung“ einzulassen? Dann schau doch mal an unserem offenen Basteltisch in der Nähe des Eingangs vorbei. Nimm dir eine Inspirationskarte, schnapp dir einen Bleistift und erwecke in deinem eigenen Tempo einen Charakter zum Leben – ganz unverbindlich und ohne Vorkenntnisse. Du brauchst nur Neugier. Und wer weiß, vielleicht wartest ja noch weitere Geschichten auf dich. Anfänger sind nicht nur willkommen – das hier ist genau das Richtige für dich.",
+    "programUrl": "https://attension-festival.de/programm#program_18579",
+    "day": "Fr",
+    "time": "13:31"
+  },
+  {
     "title": "BALLROOM",
     "type": "Theater/Tanz/Zirkus",
     "genre": "Zeitgenössischer Zirkus",
@@ -2525,7 +2615,7 @@
     "genre": "Workshop",
     "organizer": null,
     "duration": "90 Min.",
-    "minAge": "-9+",
+    "minAge": "9+",
     "language": "deutsch",
     "stage": "A | Workshophangar",
     "shortDescription": "Move. Breathe. Connect. Entdecke die kreative Kraft des Seils! Spielerisch verbesserst du Beweglichkeit, Koordination & Körperwahrnehmung und findest deinen eigenen Flow. Für alle Level.",
@@ -2715,6 +2805,21 @@
     "time": "15:00"
   },
   {
+    "title": "Drag meets Democlown Action Workshop",
+    "type": "Kino/Workshops/Lesungen",
+    "genre": "Workshop",
+    "organizer": null,
+    "duration": "270 Min.",
+    "minAge": null,
+    "language": "deutsch, englisch",
+    "stage": "Z | Cabaret",
+    "shortDescription": "Der Workshop findet in der Jurte neben dem Cabaret statt. Drag, Clownerie, Anarchie! Schlüpft in neue Rollen, probiert Perücken, Bewegungen und Make-up. Spielt mit Gender, Normen und Identitäten – und zieht als bunte Tuntenclown-Masse aufs Festival!",
+    "fullDescription": "Der Workshop findet in der Jurte neben dem Cabaret statt. Drag, Clownerie, Anarchie! Schlüpft in neue Rollen, probiert Perücken, Bewegungen und Make-up. Spielt mit Gender, Normen und Identitäten – und zieht als bunte Tuntenclown-Masse aufs Festival!",
+    "programUrl": "https://attension-festival.de/programm#program_18509",
+    "day": "Fr",
+    "time": "15:00"
+  },
+  {
     "title": "eternal algues",
     "type": "Sideshows/Walkacts/Installationen",
     "genre": "Performance",
@@ -2801,6 +2906,21 @@
     "shortDescription": "Eine cineastische Atmosphäre erfüllt die Luft. Zwischen Trash und Vergessenheit entfalten die Figuren am Rande des Alltags eine Welt aus traumhaften Sequenzen. Mit Sarkasmus und Humor wirft dieser zeitgenössische Zirkus einen schonungslosen Blick auf die Realität – voller Absurdität und Menschlichkeit. Nach einer zweiwöchigen Residenz auf dem Gelände des Kulturkosmos präsentiert Cirque Pardi! bei der at.tension#11 drei Previews von „Bleu Électrique“ vor der offiziellen Premiere.",
     "fullDescription": "Eine cineastische Atmosphäre erfüllt die Luft. Zwischen Trash und Vergessenheit entfalten die Figuren am Rande des Alltags eine Welt aus traumhaften Sequenzen. Mit Sarkasmus und Humor wirft dieser zeitgenössische Zirkus einen schonungslosen Blick auf die Realität – voller Absurdität und Menschlichkeit. Nach einer zweiwöchigen Residenz auf dem Gelände des Kulturkosmos präsentiert Cirque Pardi! bei der at.tension#11 drei Previews von „Bleu Électrique“ vor der offiziellen Premiere.",
     "programUrl": "https://attension-festival.de/programm#program_18249",
+    "day": "Fr",
+    "time": "15:30"
+  },
+  {
+    "title": "Flash Tempête",
+    "type": "Sideshows/Walkacts/Installationen",
+    "genre": "Sideshow",
+    "organizer": null,
+    "duration": null,
+    "minAge": null,
+    "language": null,
+    "stage": "8 | Seebühne",
+    "shortDescription": "Erlebt puren Nervenkitzel an Bord eines Bootes auf tobender See – ganz ohne Risiko und nasse Füße. „Flash Tempête“ ist Fotostudio und Sturmsimulator zugleich. Per Knopfdruck gestaltet ihr die Spezialeffekte: peitschenden Regen, tosende Wellen, heulenden Wind oder kreischende Möwen. Trotzt als furchtlose Kapitän:innen, mystische Meermenschen oder wettergegerbte Fischer:innen den Naturgewalten. Als Andenken dieser wilden Reise wartet am Ende ein gedrucktes Foto auf euch.",
+    "fullDescription": "Erlebt puren Nervenkitzel an Bord eines Bootes auf tobender See – ganz ohne Risiko und nasse Füße. „Flash Tempête“ ist Fotostudio und Sturmsimulator zugleich. Per Knopfdruck gestaltet ihr die Spezialeffekte: peitschenden Regen, tosende Wellen, heulenden Wind oder kreischende Möwen. Trotzt als furchtlose Kapitän:innen, mystische Meermenschen oder wettergegerbte Fischer:innen den Naturgewalten. Als Andenken dieser wilden Reise wartet am Ende ein gedrucktes Foto auf euch.",
+    "programUrl": "https://attension-festival.de/programm#program_18581",
     "day": "Fr",
     "time": "15:30"
   },
@@ -2955,6 +3075,21 @@
     "time": "16:00"
   },
   {
+    "title": "Miau Sayonara",
+    "type": "Musik",
+    "genre": "DJ",
+    "organizer": null,
+    "duration": null,
+    "minAge": null,
+    "language": null,
+    "stage": "N | Räuber:innenhöhle",
+    "shortDescription": null,
+    "fullDescription": null,
+    "programUrl": "https://attension-festival.de/programm#program_18299",
+    "day": "Fr",
+    "time": "16:00"
+  },
+  {
     "title": "OBAKE",
     "type": "Theater/Tanz/Zirkus",
     "genre": "Zeitgenössischer Zirkus",
@@ -2966,6 +3101,21 @@
     "shortDescription": "Diese ortspezifische Performance bricht radikal mit unseren Sehgewohnheiten. Das unzertrennliche Duo Parpaing und Moellon wurde zu einer Aufgabe berufen, deren Sinn nur schwer zu erraten ist. Auf ihrer Reise durch die Menschenwelt nutzen die beiden Mauern, Fassaden, Bäume oder Treppen als vertikale Stationen ihrer unvorhersehbaren Akrobatik. Eine mobile Performance, die sich den öffentlichen Raum schonungslos aneignet und den Blick auf die Umgebung komplett entstaubt.",
     "fullDescription": "Diese ortspezifische Performance bricht radikal mit unseren Sehgewohnheiten. Das unzertrennliche Duo Parpaing und Moellon wurde zu einer Aufgabe berufen, deren Sinn nur schwer zu erraten ist. Auf ihrer Reise durch die Menschenwelt nutzen die beiden Mauern, Fassaden, Bäume oder Treppen als vertikale Stationen ihrer unvorhersehbaren Akrobatik. Eine mobile Performance, die sich den öffentlichen Raum schonungslos aneignet und den Blick auf die Umgebung komplett entstaubt.",
     "programUrl": "https://attension-festival.de/programm#program_16581",
+    "day": "Fr",
+    "time": "16:00"
+  },
+  {
+    "title": "Radikale Therapie - Ein Info- und Kennenlern-Workshop",
+    "type": "Kino/Workshops/Lesungen",
+    "genre": "Workshop",
+    "organizer": null,
+    "duration": "90 - 120 Min.",
+    "minAge": "16+",
+    "language": "deutsch",
+    "stage": "A | Workshophangar",
+    "shortDescription": "Radikale Therapie ist selbstorganisiert und emanzipatorisch. Menschen unterstützen sich gegenseitig, um erlernte Sozialisierung zu hinterfragen. Wir geben Einblick in Theorie, Praxis und nächste Schritte. Freitag für Queers und TIN, Sonntag für All Gender.",
+    "fullDescription": "Radikale Therapie ist selbstorganisiert und emanzipatorisch. Menschen unterstützen sich gegenseitig, um erlernte Sozialisierung zu hinterfragen. Wir geben Einblick in Theorie, Praxis und nächste Schritte. Freitag für Queers und TIN, Sonntag für All Gender.",
+    "programUrl": "https://attension-festival.de/programm#program_18399",
     "day": "Fr",
     "time": "16:00"
   },
@@ -3570,6 +3720,21 @@
     "time": "18:30"
   },
   {
+    "title": "Flash Tempête",
+    "type": "Sideshows/Walkacts/Installationen",
+    "genre": "Sideshow",
+    "organizer": null,
+    "duration": null,
+    "minAge": null,
+    "language": null,
+    "stage": "8 | Seebühne",
+    "shortDescription": "Erlebt puren Nervenkitzel an Bord eines Bootes auf tobender See – ganz ohne Risiko und nasse Füße. „Flash Tempête“ ist Fotostudio und Sturmsimulator zugleich. Per Knopfdruck gestaltet ihr die Spezialeffekte: peitschenden Regen, tosende Wellen, heulenden Wind oder kreischende Möwen. Trotzt als furchtlose Kapitän:innen, mystische Meermenschen oder wettergegerbte Fischer:innen den Naturgewalten. Als Andenken dieser wilden Reise wartet am Ende ein gedrucktes Foto auf euch.",
+    "fullDescription": "Erlebt puren Nervenkitzel an Bord eines Bootes auf tobender See – ganz ohne Risiko und nasse Füße. „Flash Tempête“ ist Fotostudio und Sturmsimulator zugleich. Per Knopfdruck gestaltet ihr die Spezialeffekte: peitschenden Regen, tosende Wellen, heulenden Wind oder kreischende Möwen. Trotzt als furchtlose Kapitän:innen, mystische Meermenschen oder wettergegerbte Fischer:innen den Naturgewalten. Als Andenken dieser wilden Reise wartet am Ende ein gedrucktes Foto auf euch.",
+    "programUrl": "https://attension-festival.de/programm#program_18581",
+    "day": "Fr",
+    "time": "18:30"
+  },
+  {
     "title": "Mentir lo Mínimo",
     "type": "Theater/Tanz/Zirkus",
     "genre": "Zeitgenössischer Zirkus",
@@ -3833,8 +3998,8 @@
     "minAge": null,
     "language": "englisch",
     "stage": "Outdoor (tba)",
-    "shortDescription": "Eine Parodie, die gleichermaßen unterhält und verstört! Melon, Mardi und Rossinyol geraten in einen unerwarteten Konflikt, der ihren ungezähmten Überlebensdrang und ihre rohe Tollpatschigkeit offenbart. Seht eine raue Freundschaft aus Schuld und Verantwortung, ein unwahrscheinliches Verbrechen, einen verdächtigen Prozess und eine absurde Strafe – die Willkür der Justiz aus der Perspektive dreier Clowns. Eine unglaubliche Inszenierung mit der Gefahr, sich totzulachen.",
-    "fullDescription": "Eine Parodie, die gleichermaßen unterhält und verstört! Melon, Mardi und Rossinyol geraten in einen unerwarteten Konflikt, der ihren ungezähmten Überlebensdrang und ihre rohe Tollpatschigkeit offenbart. Seht eine raue Freundschaft aus Schuld und Verantwortung, ein unwahrscheinliches Verbrechen, einen verdächtigen Prozess und eine absurde Strafe – die Willkür der Justiz aus der Perspektive dreier Clowns. Eine unglaubliche Inszenierung mit der Gefahr, sich totzulachen.",
+    "shortDescription": "Content Warnings im Text: Eine Parodie, die gleichermaßen unterhält und verstört! Melon, Mardi und Rossinyol geraten in einen unerwarteten Konflikt, der ihren ungezähmten Überlebensdrang und ihre rohe Tollpatschigkeit offenbart. Seht eine raue Freundschaft aus Schuld und Verantwortung, ein unwahrscheinliches Verbrechen, einen verdächtigen Prozess und eine gewaltsame, tödliche Strafe – die Willkür der Justiz aus der Perspektive dreier Clowns. Eine unglaubliche Inszenierung mit der Gefahr, sich totzulachen.",
+    "fullDescription": "Content Warnings im Text: Eine Parodie, die gleichermaßen unterhält und verstört! Melon, Mardi und Rossinyol geraten in einen unerwarteten Konflikt, der ihren ungezähmten Überlebensdrang und ihre rohe Tollpatschigkeit offenbart. Seht eine raue Freundschaft aus Schuld und Verantwortung, ein unwahrscheinliches Verbrechen, einen verdächtigen Prozess und eine gewaltsame, tödliche Strafe – die Willkür der Justiz aus der Perspektive dreier Clowns. Eine unglaubliche Inszenierung mit der Gefahr, sich totzulachen.",
     "programUrl": "https://attension-festival.de/programm#program_16567",
     "day": "Fr",
     "time": "19:30"
@@ -4275,6 +4440,21 @@
     "time": "22:30"
   },
   {
+    "title": "Flash Tempête",
+    "type": "Sideshows/Walkacts/Installationen",
+    "genre": "Sideshow",
+    "organizer": null,
+    "duration": null,
+    "minAge": null,
+    "language": null,
+    "stage": "8 | Seebühne",
+    "shortDescription": "Erlebt puren Nervenkitzel an Bord eines Bootes auf tobender See – ganz ohne Risiko und nasse Füße. „Flash Tempête“ ist Fotostudio und Sturmsimulator zugleich. Per Knopfdruck gestaltet ihr die Spezialeffekte: peitschenden Regen, tosende Wellen, heulenden Wind oder kreischende Möwen. Trotzt als furchtlose Kapitän:innen, mystische Meermenschen oder wettergegerbte Fischer:innen den Naturgewalten. Als Andenken dieser wilden Reise wartet am Ende ein gedrucktes Foto auf euch.",
+    "fullDescription": "Erlebt puren Nervenkitzel an Bord eines Bootes auf tobender See – ganz ohne Risiko und nasse Füße. „Flash Tempête“ ist Fotostudio und Sturmsimulator zugleich. Per Knopfdruck gestaltet ihr die Spezialeffekte: peitschenden Regen, tosende Wellen, heulenden Wind oder kreischende Möwen. Trotzt als furchtlose Kapitän:innen, mystische Meermenschen oder wettergegerbte Fischer:innen den Naturgewalten. Als Andenken dieser wilden Reise wartet am Ende ein gedrucktes Foto auf euch.",
+    "programUrl": "https://attension-festival.de/programm#program_18581",
+    "day": "Fr",
+    "time": "22:30"
+  },
+  {
     "title": "The Losers Arcade",
     "type": "Sideshows/Walkacts/Installationen",
     "genre": "Interaktive Spielhalle",
@@ -4617,7 +4797,7 @@
     "fullDescription": null,
     "programUrl": "https://attension-festival.de/programm#program_18295",
     "day": "Sa",
-    "time": "01:30"
+    "time": "02:00"
   },
   {
     "title": "Kenji Tanaka",
@@ -5195,7 +5375,7 @@
     "genre": "Workshop",
     "organizer": null,
     "duration": "90 Min.",
-    "minAge": "-9+",
+    "minAge": "9+",
     "language": "deutsch",
     "stage": "A | Workshophangar",
     "shortDescription": "Move. Breathe. Connect. Entdecke die kreative Kraft des Seils! Spielerisch verbesserst du Beweglichkeit, Koordination & Körperwahrnehmung und findest deinen eigenen Flow. Für alle Level.",
@@ -5475,6 +5655,36 @@
     "time": "12:30"
   },
   {
+    "title": "Familienakrobatik",
+    "type": "Kino/Workshops/Lesungen",
+    "genre": "Workshop",
+    "organizer": null,
+    "duration": "90 Min.",
+    "minAge": null,
+    "language": "deutsch",
+    "stage": "A | Workshophangar",
+    "shortDescription": "Dieser Workshop richtet sich an Kinder ab 5 Jahren mit Begleitpersonen. Gemeinsam werden partnerakrobatische Figuren gebaut, Räder geschlagen und erste Handstände probiert. Auch Bewegungsspiele und Animal Movements erwarten euch bei der Familienakrobatik.",
+    "fullDescription": "Dieser Workshop richtet sich an Kinder ab 5 Jahren mit Begleitpersonen. Gemeinsam werden partnerakrobatische Figuren gebaut, Räder geschlagen und erste Handstände probiert. Auch Bewegungsspiele und Animal Movements erwarten euch bei der Familienakrobatik.",
+    "programUrl": "https://attension-festival.de/programm#program_18512",
+    "day": "Sa",
+    "time": "12:58"
+  },
+  {
+    "title": "Physical Theatre",
+    "type": "Kino/Workshops/Lesungen",
+    "genre": "Workshop",
+    "organizer": null,
+    "duration": "120 Min.",
+    "minAge": null,
+    "language": "deutsch, englisch",
+    "stage": "A | Workshophangar",
+    "shortDescription": "Körpertheater erleben! Mit Pantomime, Clownerie, Objektmanipulation und Lecoq-Methoden erforschen wir Körpersprache, Präsenz, Rhythmus und Ausdruck – spielerisch, präzise und mit viel Spaß.",
+    "fullDescription": "Körpertheater erleben! Mit Pantomime, Clownerie, Objektmanipulation und Lecoq-Methoden erforschen wir Körpersprache, Präsenz, Rhythmus und Ausdruck – spielerisch, präzise und mit viel Spaß.",
+    "programUrl": "https://attension-festival.de/programm#program_18510",
+    "day": "Sa",
+    "time": "12:59"
+  },
+  {
     "title": "Bei Vollmond spricht man nicht",
     "type": "Kinderprogramm",
     "genre": "Figurentheater",
@@ -5625,19 +5835,19 @@
     "time": "13:01"
   },
   {
-    "title": "Schwing das Tanzbein",
+    "title": "Kleine Stempelbilder",
     "type": "Kino/Workshops/Lesungen",
     "genre": "Workshop",
     "organizer": null,
-    "duration": "90 Min.",
-    "minAge": "12+",
+    "duration": "120 Min.",
+    "minAge": null,
     "language": null,
     "stage": "A | Workshophangar",
-    "shortDescription": "Die gemeinsame Freude am Tanzen steht hier besonders im Vordergrund. Bei diesem Workshop werden traditionelle Kreistänze aus unterschiedlichen Kulturen und lateinamerikanische Tänze erarbeitet. Dabei werden einfache Tanzschrittabfolgen gemeinsam erlernt und bei einem freien Teil werden wir darauf lostanzen und uns von der Musik leiten lassen.",
-    "fullDescription": "Die gemeinsame Freude am Tanzen steht hier besonders im Vordergrund. Bei diesem Workshop werden traditionelle Kreistänze aus unterschiedlichen Kulturen und lateinamerikanische Tänze erarbeitet. Dabei werden einfache Tanzschrittabfolgen gemeinsam erlernt und bei einem freien Teil werden wir darauf lostanzen und uns von der Musik leiten lassen.",
-    "programUrl": "https://attension-festival.de/programm#program_18511",
+    "shortDescription": "Hestellung von Stempeln nach eigenem Entwurf zur mehrmaligen Verwendung. Je nach Farbauftragung können diese sowohl für Textilien als auch für Papier oder Oberflächen wie Holz verwendet werden. Angeboten wird vor Ort der Probedruck auf Papier.",
+    "fullDescription": "Hestellung von Stempeln nach eigenem Entwurf zur mehrmaligen Verwendung. Je nach Farbauftragung können diese sowohl für Textilien als auch für Papier oder Oberflächen wie Holz verwendet werden. Angeboten wird vor Ort der Probedruck auf Papier.",
+    "programUrl": "https://attension-festival.de/programm#program_18504",
     "day": "Sa",
-    "time": "13:02"
+    "time": "13:05"
   },
   {
     "title": "Chihiros Reise ins Zauberland",
@@ -5955,6 +6165,21 @@
     "time": "14:30"
   },
   {
+    "title": "Words and Worlds - Character crafting table",
+    "type": "Kino/Workshops/Lesungen",
+    "genre": "Workshop",
+    "organizer": null,
+    "duration": "120 Min.",
+    "minAge": "10+",
+    "language": "englisch, deutsch",
+    "stage": "A | Workshophangar",
+    "shortDescription": "Du bist noch nicht bereit, dich auf eine komplette Sitzung von „Words and Worlds – Gemeinsame Charakterentwicklung“ einzulassen? Dann schau doch mal an unserem offenen Basteltisch in der Nähe des Eingangs vorbei. Nimm dir eine Inspirationskarte, schnapp dir einen Bleistift und erwecke in deinem eigenen Tempo einen Charakter zum Leben – ganz unverbindlich und ohne Vorkenntnisse. Du brauchst nur Neugier. Und wer weiß, vielleicht wartest ja noch weitere Geschichten auf dich. Anfänger sind nicht nur willkommen – das hier ist genau das Richtige für dich.",
+    "fullDescription": "Du bist noch nicht bereit, dich auf eine komplette Sitzung von „Words and Worlds – Gemeinsame Charakterentwicklung“ einzulassen? Dann schau doch mal an unserem offenen Basteltisch in der Nähe des Eingangs vorbei. Nimm dir eine Inspirationskarte, schnapp dir einen Bleistift und erwecke in deinem eigenen Tempo einen Charakter zum Leben – ganz unverbindlich und ohne Vorkenntnisse. Du brauchst nur Neugier. Und wer weiß, vielleicht wartest ja noch weitere Geschichten auf dich. Anfänger sind nicht nur willkommen – das hier ist genau das Richtige für dich.",
+    "programUrl": "https://attension-festival.de/programm#program_18579",
+    "day": "Sa",
+    "time": "14:31"
+  },
+  {
     "title": "BALLROOM",
     "type": "Theater/Tanz/Zirkus",
     "genre": "Zeitgenössischer Zirkus",
@@ -6131,6 +6356,21 @@
     "shortDescription": "„Keine Panik! Wir haben alles unter Kontrolle!“ Riesige Käfer sorgen für Aufregung und Massenhysterie unter den Besucher:innen. Sie scheinen durch den Verzehr von Essensresten der Foodstände zu enormen Ausmaßen herangewachsen zu sein und krabbeln über das Festivalgelände. Ein Förster versucht, die Situation unter Kontrolle zu bringen. Eine kafkaeske Parade, die mit großem Erfolg schon unterschiedlichste Festivals in krabbeliges Chaos gestürzt hat.",
     "fullDescription": "„Keine Panik! Wir haben alles unter Kontrolle!“ Riesige Käfer sorgen für Aufregung und Massenhysterie unter den Besucher:innen. Sie scheinen durch den Verzehr von Essensresten der Foodstände zu enormen Ausmaßen herangewachsen zu sein und krabbeln über das Festivalgelände. Ein Förster versucht, die Situation unter Kontrolle zu bringen. Eine kafkaeske Parade, die mit großem Erfolg schon unterschiedlichste Festivals in krabbeliges Chaos gestürzt hat.",
     "programUrl": "https://attension-festival.de/programm#program_17419",
+    "day": "Sa",
+    "time": "15:30"
+  },
+  {
+    "title": "Flash Tempête",
+    "type": "Sideshows/Walkacts/Installationen",
+    "genre": "Sideshow",
+    "organizer": null,
+    "duration": null,
+    "minAge": null,
+    "language": null,
+    "stage": "8 | Seebühne",
+    "shortDescription": "Erlebt puren Nervenkitzel an Bord eines Bootes auf tobender See – ganz ohne Risiko und nasse Füße. „Flash Tempête“ ist Fotostudio und Sturmsimulator zugleich. Per Knopfdruck gestaltet ihr die Spezialeffekte: peitschenden Regen, tosende Wellen, heulenden Wind oder kreischende Möwen. Trotzt als furchtlose Kapitän:innen, mystische Meermenschen oder wettergegerbte Fischer:innen den Naturgewalten. Als Andenken dieser wilden Reise wartet am Ende ein gedrucktes Foto auf euch.",
+    "fullDescription": "Erlebt puren Nervenkitzel an Bord eines Bootes auf tobender See – ganz ohne Risiko und nasse Füße. „Flash Tempête“ ist Fotostudio und Sturmsimulator zugleich. Per Knopfdruck gestaltet ihr die Spezialeffekte: peitschenden Regen, tosende Wellen, heulenden Wind oder kreischende Möwen. Trotzt als furchtlose Kapitän:innen, mystische Meermenschen oder wettergegerbte Fischer:innen den Naturgewalten. Als Andenken dieser wilden Reise wartet am Ende ein gedrucktes Foto auf euch.",
+    "programUrl": "https://attension-festival.de/programm#program_18581",
     "day": "Sa",
     "time": "15:30"
   },
@@ -6356,6 +6596,21 @@
     "shortDescription": "Komm ins „LeckiLeckiLand“ und erlebe Entertainment für jeden Geschmack. Eine flirty Begegnung im Liebestunnel? Wundersame Illusionen im extravaganten Streichelzoo? Nervenkitzel im Haus der schrecklich gutgelaunten Clowns oder doch aufs Ganze gehen beim Glücksspiel? Das Leipziger Kollektiv hat sich der Kunstform des LambeLambe verschrieben: Miniaturtheaterkästen, die für jeweils eine Person bespielt werden und unterschiedliche kurze Theatererlebnisse bieten.",
     "fullDescription": "Komm ins „LeckiLeckiLand“ und erlebe Entertainment für jeden Geschmack. Eine flirty Begegnung im Liebestunnel? Wundersame Illusionen im extravaganten Streichelzoo? Nervenkitzel im Haus der schrecklich gutgelaunten Clowns oder doch aufs Ganze gehen beim Glücksspiel? Das Leipziger Kollektiv hat sich der Kunstform des LambeLambe verschrieben: Miniaturtheaterkästen, die für jeweils eine Person bespielt werden und unterschiedliche kurze Theatererlebnisse bieten.",
     "programUrl": "https://attension-festival.de/programm#program_17886",
+    "day": "Sa",
+    "time": "16:00"
+  },
+  {
+    "title": "Modenschauktion",
+    "type": "Sideshows/Walkacts/Installationen",
+    "genre": "Performance",
+    "organizer": null,
+    "duration": null,
+    "minAge": null,
+    "language": null,
+    "stage": "N | Räuber:innenhöhle",
+    "shortDescription": "Modenschauktion - hosted by Klärr und Lucky Luciano: 15 Jahre Räuber*innen. 15 Jahre Menschen. Direkt vom Körper weg. Alles vom Platz. Platzsachen. Wir geben her, was da ist. Kleidung direkt vom Körper, Sachen direkt vom Platz. Nichts Neues, nichts Gekauftes. Nur das, was fünfzehn Jahre zusammengekommen ist. Modenschau. Auktion. Alles geht unter den Hammer.",
+    "fullDescription": "Modenschauktion - hosted by Klärr und Lucky Luciano: 15 Jahre Räuber*innen. 15 Jahre Menschen. Direkt vom Körper weg. Alles vom Platz. Platzsachen. Wir geben her, was da ist. Kleidung direkt vom Körper, Sachen direkt vom Platz. Nichts Neues, nichts Gekauftes. Nur das, was fünfzehn Jahre zusammengekommen ist. Modenschau. Auktion. Alles geht unter den Hammer.",
+    "programUrl": "https://attension-festival.de/programm#program_18574",
     "day": "Sa",
     "time": "16:00"
   },
@@ -6900,6 +7155,21 @@
     "time": "18:30"
   },
   {
+    "title": "Flash Tempête",
+    "type": "Sideshows/Walkacts/Installationen",
+    "genre": "Sideshow",
+    "organizer": null,
+    "duration": null,
+    "minAge": null,
+    "language": null,
+    "stage": "8 | Seebühne",
+    "shortDescription": "Erlebt puren Nervenkitzel an Bord eines Bootes auf tobender See – ganz ohne Risiko und nasse Füße. „Flash Tempête“ ist Fotostudio und Sturmsimulator zugleich. Per Knopfdruck gestaltet ihr die Spezialeffekte: peitschenden Regen, tosende Wellen, heulenden Wind oder kreischende Möwen. Trotzt als furchtlose Kapitän:innen, mystische Meermenschen oder wettergegerbte Fischer:innen den Naturgewalten. Als Andenken dieser wilden Reise wartet am Ende ein gedrucktes Foto auf euch.",
+    "fullDescription": "Erlebt puren Nervenkitzel an Bord eines Bootes auf tobender See – ganz ohne Risiko und nasse Füße. „Flash Tempête“ ist Fotostudio und Sturmsimulator zugleich. Per Knopfdruck gestaltet ihr die Spezialeffekte: peitschenden Regen, tosende Wellen, heulenden Wind oder kreischende Möwen. Trotzt als furchtlose Kapitän:innen, mystische Meermenschen oder wettergegerbte Fischer:innen den Naturgewalten. Als Andenken dieser wilden Reise wartet am Ende ein gedrucktes Foto auf euch.",
+    "programUrl": "https://attension-festival.de/programm#program_18581",
+    "day": "Sa",
+    "time": "18:30"
+  },
+  {
     "title": "FLY",
     "type": "Sideshows/Walkacts/Installationen",
     "genre": "Theater / Sideshow",
@@ -7080,6 +7350,21 @@
     "time": "19:00"
   },
   {
+    "title": "Journey to Dao - eine schamanische Meditation auf Kakao",
+    "type": "Kino/Workshops/Lesungen",
+    "genre": "Workshop",
+    "organizer": null,
+    "duration": "90 Min.",
+    "minAge": "16+",
+    "language": "deutsch",
+    "stage": "A | Workshophangar",
+    "shortDescription": "Der Genuss hochwertigen Ritual Kakaos öffnet die Herzebene. Begleitet von Oberton-, Kehlgesang und Trommelrhythmen, verlassen wir sodann die Statik des Alltags, und gleiten in einen meditativen Zustand. Im Bewusstsein unserer Alphawellen überlassen wir uns der inneren Reise. Die Seele performt. Wir sind auf dem Weg... Das Dao ist der Weg, und jeder Weg ist das Dao.",
+    "fullDescription": "Der Genuss hochwertigen Ritual Kakaos öffnet die Herzebene. Begleitet von Oberton-, Kehlgesang und Trommelrhythmen, verlassen wir sodann die Statik des Alltags, und gleiten in einen meditativen Zustand. Im Bewusstsein unserer Alphawellen überlassen wir uns der inneren Reise. Die Seele performt. Wir sind auf dem Weg... Das Dao ist der Weg, und jeder Weg ist das Dao.",
+    "programUrl": "https://attension-festival.de/programm#program_18519",
+    "day": "Sa",
+    "time": "19:00"
+  },
+  {
     "title": "Lizzy and the Palm",
     "type": "Musik",
     "genre": "Konzert",
@@ -7103,8 +7388,8 @@
     "minAge": null,
     "language": "englisch",
     "stage": "Outdoor (tba)",
-    "shortDescription": "Eine Parodie, die gleichermaßen unterhält und verstört! Melon, Mardi und Rossinyol geraten in einen unerwarteten Konflikt, der ihren ungezähmten Überlebensdrang und ihre rohe Tollpatschigkeit offenbart. Seht eine raue Freundschaft aus Schuld und Verantwortung, ein unwahrscheinliches Verbrechen, einen verdächtigen Prozess und eine absurde Strafe – die Willkür der Justiz aus der Perspektive dreier Clowns. Eine unglaubliche Inszenierung mit der Gefahr, sich totzulachen.",
-    "fullDescription": "Eine Parodie, die gleichermaßen unterhält und verstört! Melon, Mardi und Rossinyol geraten in einen unerwarteten Konflikt, der ihren ungezähmten Überlebensdrang und ihre rohe Tollpatschigkeit offenbart. Seht eine raue Freundschaft aus Schuld und Verantwortung, ein unwahrscheinliches Verbrechen, einen verdächtigen Prozess und eine absurde Strafe – die Willkür der Justiz aus der Perspektive dreier Clowns. Eine unglaubliche Inszenierung mit der Gefahr, sich totzulachen.",
+    "shortDescription": "Content Warnings im Text: Eine Parodie, die gleichermaßen unterhält und verstört! Melon, Mardi und Rossinyol geraten in einen unerwarteten Konflikt, der ihren ungezähmten Überlebensdrang und ihre rohe Tollpatschigkeit offenbart. Seht eine raue Freundschaft aus Schuld und Verantwortung, ein unwahrscheinliches Verbrechen, einen verdächtigen Prozess und eine gewaltsame, tödliche Strafe – die Willkür der Justiz aus der Perspektive dreier Clowns. Eine unglaubliche Inszenierung mit der Gefahr, sich totzulachen.",
+    "fullDescription": "Content Warnings im Text: Eine Parodie, die gleichermaßen unterhält und verstört! Melon, Mardi und Rossinyol geraten in einen unerwarteten Konflikt, der ihren ungezähmten Überlebensdrang und ihre rohe Tollpatschigkeit offenbart. Seht eine raue Freundschaft aus Schuld und Verantwortung, ein unwahrscheinliches Verbrechen, einen verdächtigen Prozess und eine gewaltsame, tödliche Strafe – die Willkür der Justiz aus der Perspektive dreier Clowns. Eine unglaubliche Inszenierung mit der Gefahr, sich totzulachen.",
     "programUrl": "https://attension-festival.de/programm#program_16567",
     "day": "Sa",
     "time": "19:00"
@@ -7710,6 +7995,21 @@
     "time": "22:30"
   },
   {
+    "title": "Flash Tempête",
+    "type": "Sideshows/Walkacts/Installationen",
+    "genre": "Sideshow",
+    "organizer": null,
+    "duration": null,
+    "minAge": null,
+    "language": null,
+    "stage": "8 | Seebühne",
+    "shortDescription": "Erlebt puren Nervenkitzel an Bord eines Bootes auf tobender See – ganz ohne Risiko und nasse Füße. „Flash Tempête“ ist Fotostudio und Sturmsimulator zugleich. Per Knopfdruck gestaltet ihr die Spezialeffekte: peitschenden Regen, tosende Wellen, heulenden Wind oder kreischende Möwen. Trotzt als furchtlose Kapitän:innen, mystische Meermenschen oder wettergegerbte Fischer:innen den Naturgewalten. Als Andenken dieser wilden Reise wartet am Ende ein gedrucktes Foto auf euch.",
+    "fullDescription": "Erlebt puren Nervenkitzel an Bord eines Bootes auf tobender See – ganz ohne Risiko und nasse Füße. „Flash Tempête“ ist Fotostudio und Sturmsimulator zugleich. Per Knopfdruck gestaltet ihr die Spezialeffekte: peitschenden Regen, tosende Wellen, heulenden Wind oder kreischende Möwen. Trotzt als furchtlose Kapitän:innen, mystische Meermenschen oder wettergegerbte Fischer:innen den Naturgewalten. Als Andenken dieser wilden Reise wartet am Ende ein gedrucktes Foto auf euch.",
+    "programUrl": "https://attension-festival.de/programm#program_18581",
+    "day": "Sa",
+    "time": "22:30"
+  },
+  {
     "title": "LAGERREGAL",
     "type": "Musik",
     "genre": "Konzert",
@@ -8070,6 +8370,21 @@
     "time": "01:30"
   },
   {
+    "title": "Anja Tomschitz",
+    "type": "Musik",
+    "genre": "DJ",
+    "organizer": null,
+    "duration": null,
+    "minAge": null,
+    "language": null,
+    "stage": "25 | Tanzworkshop",
+    "shortDescription": "Anja Tomschitz entdeckte elektronische Musik auf dem Dancefloor und wechselte vor rund fünf Jahren selbst ans DJ-Pult. Ihre Sets verbinden emotionale Tiefe mit treibender Energie. Als Psychologin und DJ engagiert sie sich zudem mit Workshops für die Nachwuchsförderung in Mecklenburg-Vorpommern.",
+    "fullDescription": "Anja Tomschitz entdeckte elektronische Musik auf dem Dancefloor und wechselte vor rund fünf Jahren selbst ans DJ-Pult. Ihre Sets verbinden emotionale Tiefe mit treibender Energie. Als Psychologin und DJ engagiert sie sich zudem mit Workshops für die Nachwuchsförderung in Mecklenburg-Vorpommern.",
+    "programUrl": "https://attension-festival.de/programm#program_18467",
+    "day": "So",
+    "time": "02:00"
+  },
+  {
     "title": "Coco Calypso",
     "type": "Musik",
     "genre": "DJ",
@@ -8082,7 +8397,7 @@
     "fullDescription": null,
     "programUrl": "https://attension-festival.de/programm#program_18404",
     "day": "So",
-    "time": "01:45"
+    "time": "02:00"
   },
   {
     "title": "DJ Super Rush b2b kimchi cora",
@@ -8428,6 +8743,21 @@
     "programUrl": "https://attension-festival.de/programm#program_18246",
     "day": "So",
     "time": "10:00"
+  },
+  {
+    "title": "Thai Yoga Massage Basics & Meditation",
+    "type": "Kino/Workshops/Lesungen",
+    "genre": "Workshop",
+    "organizer": null,
+    "duration": "90 Min.",
+    "minAge": "16+",
+    "language": "deutsch",
+    "stage": "A | Workshophangar",
+    "shortDescription": "Thai-Yoga Massage ist achtsame Körperarbeit: Druck, passive Dehnungen und Mobilisation. Ziel ist es, Spannungen zu lösen, Beweglichkeit zu verbessern und das allgemeine Wohlbefinden zu stärken – körperlich wie mental. Die Thai-Yoga-Massage eignet sich sowohl zur Tiefenentspannung als auch zur präventiven oder begleitenden Unterstützung bei körperlichen Beschwerden. Bitte bringe eine Matte, decke oder Handtuch als Unterlage mit.",
+    "fullDescription": "Thai-Yoga Massage ist achtsame Körperarbeit: Druck, passive Dehnungen und Mobilisation. Ziel ist es, Spannungen zu lösen, Beweglichkeit zu verbessern und das allgemeine Wohlbefinden zu stärken – körperlich wie mental. Die Thai-Yoga-Massage eignet sich sowohl zur Tiefenentspannung als auch zur präventiven oder begleitenden Unterstützung bei körperlichen Beschwerden. Bitte bringe eine Matte, decke oder Handtuch als Unterlage mit.",
+    "programUrl": "https://attension-festival.de/programm#program_18518",
+    "day": "So",
+    "time": "10:01"
   },
   {
     "title": "FLY",
@@ -9315,6 +9645,21 @@
     "time": "14:00"
   },
   {
+    "title": "Radikale Therapie - Ein Info- und Kennenlern-Workshop",
+    "type": "Kino/Workshops/Lesungen",
+    "genre": "Workshop",
+    "organizer": null,
+    "duration": "90 - 120 Min.",
+    "minAge": "16+",
+    "language": "deutsch",
+    "stage": "A | Workshophangar",
+    "shortDescription": "Radikale Therapie ist selbstorganisiert und emanzipatorisch. Menschen unterstützen sich gegenseitig, um erlernte Sozialisierung zu hinterfragen. Wir geben Einblick in Theorie, Praxis und nächste Schritte. Freitag für Queers und TIN, Sonntag für All Gender.",
+    "fullDescription": "Radikale Therapie ist selbstorganisiert und emanzipatorisch. Menschen unterstützen sich gegenseitig, um erlernte Sozialisierung zu hinterfragen. Wir geben Einblick in Theorie, Praxis und nächste Schritte. Freitag für Queers und TIN, Sonntag für All Gender.",
+    "programUrl": "https://attension-festival.de/programm#program_18399",
+    "day": "So",
+    "time": "14:00"
+  },
+  {
     "title": "Schwein für Schwein (Pig4Pig)",
     "type": "Kino/Workshops/Lesungen",
     "genre": "Workshop",
@@ -9388,6 +9733,21 @@
     "programUrl": "https://attension-festival.de/programm#program_17934",
     "day": "So",
     "time": "14:00"
+  },
+  {
+    "title": "Words and Worlds - Character crafting table",
+    "type": "Kino/Workshops/Lesungen",
+    "genre": "Workshop",
+    "organizer": null,
+    "duration": "120 Min.",
+    "minAge": "10+",
+    "language": "englisch, deutsch",
+    "stage": "A | Workshophangar",
+    "shortDescription": "Du bist noch nicht bereit, dich auf eine komplette Sitzung von „Words and Worlds – Gemeinsame Charakterentwicklung“ einzulassen? Dann schau doch mal an unserem offenen Basteltisch in der Nähe des Eingangs vorbei. Nimm dir eine Inspirationskarte, schnapp dir einen Bleistift und erwecke in deinem eigenen Tempo einen Charakter zum Leben – ganz unverbindlich und ohne Vorkenntnisse. Du brauchst nur Neugier. Und wer weiß, vielleicht wartest ja noch weitere Geschichten auf dich. Anfänger sind nicht nur willkommen – das hier ist genau das Richtige für dich.",
+    "fullDescription": "Du bist noch nicht bereit, dich auf eine komplette Sitzung von „Words and Worlds – Gemeinsame Charakterentwicklung“ einzulassen? Dann schau doch mal an unserem offenen Basteltisch in der Nähe des Eingangs vorbei. Nimm dir eine Inspirationskarte, schnapp dir einen Bleistift und erwecke in deinem eigenen Tempo einen Charakter zum Leben – ganz unverbindlich und ohne Vorkenntnisse. Du brauchst nur Neugier. Und wer weiß, vielleicht wartest ja noch weitere Geschichten auf dich. Anfänger sind nicht nur willkommen – das hier ist genau das Richtige für dich.",
+    "programUrl": "https://attension-festival.de/programm#program_18579",
+    "day": "So",
+    "time": "14:02"
   },
   {
     "title": "\"KI für Alle - KI-Fahndung, Massenüberwachung & präventive Kontrolle\"",
@@ -9716,6 +10076,21 @@
     "shortDescription": "„Keine Panik! Wir haben alles unter Kontrolle!“ Riesige Käfer sorgen für Aufregung und Massenhysterie unter den Besucher:innen. Sie scheinen durch den Verzehr von Essensresten der Foodstände zu enormen Ausmaßen herangewachsen zu sein und krabbeln über das Festivalgelände. Ein Förster versucht, die Situation unter Kontrolle zu bringen. Eine kafkaeske Parade, die mit großem Erfolg schon unterschiedlichste Festivals in krabbeliges Chaos gestürzt hat.",
     "fullDescription": "„Keine Panik! Wir haben alles unter Kontrolle!“ Riesige Käfer sorgen für Aufregung und Massenhysterie unter den Besucher:innen. Sie scheinen durch den Verzehr von Essensresten der Foodstände zu enormen Ausmaßen herangewachsen zu sein und krabbeln über das Festivalgelände. Ein Förster versucht, die Situation unter Kontrolle zu bringen. Eine kafkaeske Parade, die mit großem Erfolg schon unterschiedlichste Festivals in krabbeliges Chaos gestürzt hat.",
     "programUrl": "https://attension-festival.de/programm#program_17419",
+    "day": "So",
+    "time": "16:00"
+  },
+  {
+    "title": "Flash Tempête",
+    "type": "Sideshows/Walkacts/Installationen",
+    "genre": "Sideshow",
+    "organizer": null,
+    "duration": null,
+    "minAge": null,
+    "language": null,
+    "stage": "8 | Seebühne",
+    "shortDescription": "Erlebt puren Nervenkitzel an Bord eines Bootes auf tobender See – ganz ohne Risiko und nasse Füße. „Flash Tempête“ ist Fotostudio und Sturmsimulator zugleich. Per Knopfdruck gestaltet ihr die Spezialeffekte: peitschenden Regen, tosende Wellen, heulenden Wind oder kreischende Möwen. Trotzt als furchtlose Kapitän:innen, mystische Meermenschen oder wettergegerbte Fischer:innen den Naturgewalten. Als Andenken dieser wilden Reise wartet am Ende ein gedrucktes Foto auf euch.",
+    "fullDescription": "Erlebt puren Nervenkitzel an Bord eines Bootes auf tobender See – ganz ohne Risiko und nasse Füße. „Flash Tempête“ ist Fotostudio und Sturmsimulator zugleich. Per Knopfdruck gestaltet ihr die Spezialeffekte: peitschenden Regen, tosende Wellen, heulenden Wind oder kreischende Möwen. Trotzt als furchtlose Kapitän:innen, mystische Meermenschen oder wettergegerbte Fischer:innen den Naturgewalten. Als Andenken dieser wilden Reise wartet am Ende ein gedrucktes Foto auf euch.",
+    "programUrl": "https://attension-festival.de/programm#program_18581",
     "day": "So",
     "time": "16:00"
   },
@@ -10118,8 +10493,8 @@
     "minAge": null,
     "language": "englisch",
     "stage": "Outdoor (tba)",
-    "shortDescription": "Eine Parodie, die gleichermaßen unterhält und verstört! Melon, Mardi und Rossinyol geraten in einen unerwarteten Konflikt, der ihren ungezähmten Überlebensdrang und ihre rohe Tollpatschigkeit offenbart. Seht eine raue Freundschaft aus Schuld und Verantwortung, ein unwahrscheinliches Verbrechen, einen verdächtigen Prozess und eine absurde Strafe – die Willkür der Justiz aus der Perspektive dreier Clowns. Eine unglaubliche Inszenierung mit der Gefahr, sich totzulachen.",
-    "fullDescription": "Eine Parodie, die gleichermaßen unterhält und verstört! Melon, Mardi und Rossinyol geraten in einen unerwarteten Konflikt, der ihren ungezähmten Überlebensdrang und ihre rohe Tollpatschigkeit offenbart. Seht eine raue Freundschaft aus Schuld und Verantwortung, ein unwahrscheinliches Verbrechen, einen verdächtigen Prozess und eine absurde Strafe – die Willkür der Justiz aus der Perspektive dreier Clowns. Eine unglaubliche Inszenierung mit der Gefahr, sich totzulachen.",
+    "shortDescription": "Content Warnings im Text: Eine Parodie, die gleichermaßen unterhält und verstört! Melon, Mardi und Rossinyol geraten in einen unerwarteten Konflikt, der ihren ungezähmten Überlebensdrang und ihre rohe Tollpatschigkeit offenbart. Seht eine raue Freundschaft aus Schuld und Verantwortung, ein unwahrscheinliches Verbrechen, einen verdächtigen Prozess und eine gewaltsame, tödliche Strafe – die Willkür der Justiz aus der Perspektive dreier Clowns. Eine unglaubliche Inszenierung mit der Gefahr, sich totzulachen.",
+    "fullDescription": "Content Warnings im Text: Eine Parodie, die gleichermaßen unterhält und verstört! Melon, Mardi und Rossinyol geraten in einen unerwarteten Konflikt, der ihren ungezähmten Überlebensdrang und ihre rohe Tollpatschigkeit offenbart. Seht eine raue Freundschaft aus Schuld und Verantwortung, ein unwahrscheinliches Verbrechen, einen verdächtigen Prozess und eine gewaltsame, tödliche Strafe – die Willkür der Justiz aus der Perspektive dreier Clowns. Eine unglaubliche Inszenierung mit der Gefahr, sich totzulachen.",
     "programUrl": "https://attension-festival.de/programm#program_16567",
     "day": "So",
     "time": "18:30"
